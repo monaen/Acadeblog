@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Mxnet note]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/</url>
+      <content type="html"><![CDATA[<p>Here we briefly introduce how to train your own network based on your own dataset using <a href="https://github.com/dmlc/mxnet" target="_blank" rel="external">Mxnet</a> – a lightweight deep learning framework designed for both efficiency and flexibility.<br><a id="more"></a></p>
+<h3 id="Training-your-own-data-using-Mxnet"><a href="#Training-your-own-data-using-Mxnet" class="headerlink" title="Training your own data using Mxnet !!!"></a>Training your own data using Mxnet !!!</h3>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Deep learning training tips]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</url>
+      <content type="html"><![CDATA[<p>Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.<br><a id="more"></a><br><img src="/Acadeblog/images/test.jpg" alt=""></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Something About Matlab]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/05/20/SomethingAboutMatlab/</url>
+      <content type="html"><![CDATA[<p>This blog records some useful tricks about matlab, and such tricks can help write matlab codes more efficiently and easy to understand…</p>
+<h2 id="matlab-writing-styles"><a href="#matlab-writing-styles" class="headerlink" title="matlab writing styles"></a>matlab writing styles</h2><ul>
+<li>for<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for i = 1:size(E, 1),&#10;    v = E(i, 1); % variable&#10;    x = E(i, 2); % value&#10;&#10;    ......</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Matlab-functions"><a href="#Matlab-functions" class="headerlink" title="Matlab functions"></a>Matlab functions</h2><h3 id="accumarray-summary-the-values-by-index"><a href="#accumarray-summary-the-values-by-index" class="headerlink" title="* accumarray: summary the values by index"></a>* accumarray: summary the values by index</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A = [10 20 30 40];&#10;idx = [1 1 1 2];&#10;result = accumarray(idx&#39;,A)&#10;&#10;  result =&#10;&#10;      60&#10;      40</span><br></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PRML Reading notes]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/05/20/PRML_readingnotes/</url>
+      <content type="html"><![CDATA[<p>The second chapter</p>
+<ul>
+<li>Determine suituable variables:</li>
+</ul>
+<ul>
+<li>In a frequentist treatment: specific values for the parameters by optimizing some criterion, such as the likelihood function.</li>
+<li>In a Bayesian treatment:    introduce the prior distributions over the parameters and then use Bayes’s theorem to compute the corresponding posterior distribution given the observed data.</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Caffe Learning Notes(1)]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/05/03/Caffe-Learning-Notes1/</url>
+      <content type="html"><![CDATA[<h3 id="Define-the-‘’CaffeNet’’-by-iPython"><a href="#Define-the-‘’CaffeNet’’-by-iPython" class="headerlink" title="Define the ‘’CaffeNet’’ by iPython"></a>Define the ‘’CaffeNet’’ by iPython</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def conv_relu(bottom, ks, nout, stride = 1, pad = 0, group = 1,&#10;              param = learned_param,&#10;              weight_filler=dict(type=&#39;gaussian&#39;, std=0.01),&#10;              bias_filler=dict(type=&#39;constant&#39;, value=0.1)):&#10;    &#39;&#39;&#39; ks: is the kernel size&#10;        nout: is the number of output&#10;        &#10;        This convolution layer is defined to be preprossed with gaussian filler&#10;    &#39;&#39;&#39;</span><br></pre></td></tr></table></figure>
+<p><code>weight_filler</code> is the </p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[CS231n]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/04/21/cs231n-note/</url>
+      <content type="html"><![CDATA[<h1 id="Notes-for-Class-CS231n"><a href="#Notes-for-Class-CS231n" class="headerlink" title="Notes for Class CS231n"></a>Notes for Class CS231n</h1><p>This page is the learning notes of Class <a href="http://cs231n.github.io/" target="_blank" rel="external">CS231n</a><br><a id="more"></a></p>
+<ol>
+<li>Data preprocessing: Normalize the features in your data to have zero mean and unit variance before feed into the deep model.</li>
+<li>Split data tricks: This setting depends on how many hyperparameters you have and how much of an influence you expect them to have.</li>
+</ol>
+<p>kNN defaults:</p>
+<ol>
+<li>remember all the data, i.e. store all the data into storage</li>
+<li>classify a single image cost much.(every classification need much computation)</li>
+</ol>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>Approach of neural network to do the classification task:</p>
+<ol>
+<li>score function: maps the raw data to class scores.</li>
+<li>loss function: quantify the agreement between the predicted scores.<br>cast as an optimization problem.</li>
+</ol>
+<p>single matrix multiplication WxiWxi is effectively evaluating 10 separate classifiers in parallel where each classifier is a row of <strong>W</strong>.</p>
+<p>classifying the test image involves a single matrix multiplication and addition, faster than comparing each test images to all training images which kNN use.<br>That’s also why we do like to use deep model although the training part is time-consuming, the test part is just a matrix multiplication and addition with complex O(n).</p>
+<p> Depending on precisely what values we set for these weights,function has the capacity to like or dislike (depending on the sign of each weight) certain colors at certain positions in the image. That is to say the color have influence on the accuracy of classification.</p>
+<!--  -->
+<h1 id="Linear-Classification"><a href="#Linear-Classification" class="headerlink" title="Linear Classification"></a>Linear Classification</h1><h2 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h2><p>The format of SVM loss takes one particular approach to measuring how consistent the predictions on training data are with the ground truth labels. Additionally, <strong>making good predictions</strong> on the training set is <strong>equivalent to minimizing the loss</strong>.</p>
+<!-- ![tool-editor](https://www.zybuluo.com/static/img/toolbar-editor.png) -->
+<h2 id="Paramters-Configuration"><a href="#Paramters-Configuration" class="headerlink" title="Paramters Configuration"></a>Paramters Configuration</h2><p>Setting Delta($\Delta$)<br><strong>Question:</strong> What value should it be set to, and do we have to cross-validate it?<br><strong>Tips:</strong></p>
+<ul>
+<li>$\Delta$ and $\lambda$: they both control the tradeoff between the <code>data loss</code> and the <code>regularization loss</code> in the objective. </li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Caffe Training Note]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/04/21/caffe/</url>
+      <content type="html"><![CDATA[<h2 id="ImageNet"><a href="#ImageNet" class="headerlink" title="ImageNet"></a>ImageNet</h2><p>This part is a simplified instruction of training own data using <a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe</a><br><a id="more"></a></p>
+<h4 id="1-Preparing-the-dataset"><a href="#1-Preparing-the-dataset" class="headerlink" title="1. Preparing the dataset"></a><strong>1. Preparing the dataset</strong></h4><p>The final dataset should be like this:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data&#10;   -- train&#10;      -- train1.jpg&#10;&#9;  -- train2.jpg&#10;&#9;  -- train3.jpg&#10;&#9;     ......&#10;   -- val&#10;&#9;  -- val1.jpg&#10;&#9;  -- val2.jpg&#10;&#9;  -- val3.jpg&#10;&#9;     ......&#10;   -- train.txt&#10;   -- val.txt</span><br></pre></td></tr></table></figure></p>
+<p>and if the data is like this in python</p>
+<blockquote>
+<p>X_train.shape =  (5000, 1, 256, 256)<br>X_val.shape =  (2000, 1, 256, 256)<br>X_test.shape =  (500, 1, 256, 256)<br>y_train =  (5000,)<br>y_val =  (2000,)<br>y_test =  (500,)</p>
+</blockquote>
+<p>The following code can be used to generate the structure of dataset<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> not os.path.exists(<span class="string">'data'</span>):</span><br><span class="line">    os.makedirs(<span class="string">'data'</span>)</span><br><span class="line"></span><br><span class="line">os.chdir(<span class="string">'data'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">## save image</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> not os.path.exists(<span class="string">'train'</span>):</span><br><span class="line">    os.makedirs(<span class="string">'train'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> xrange(Numtrain):</span><br><span class="line">    name = <span class="string">'train'</span> + str(i) + <span class="string">'.jpg'</span></span><br><span class="line">    xx = X_train[i,]</span><br><span class="line">    xx =  xx.transpose(<span class="number">1</span>,<span class="number">2</span>,<span class="number">0</span>)</span><br><span class="line">    xx = (xx - np.min(xx)) / (np.max(xx)-np.min(xx))*<span class="number">255.0</span></span><br><span class="line">    img = Image.fromarray(xx.astype(np.uint8), <span class="string">'RGB'</span>) <span class="comment">## Notice that the function Image.fromarray() can only save image</span></span><br><span class="line">                                                  <span class="comment">## of the form 'uint8' type !!!</span></span><br><span class="line">    img.save(<span class="string">'train/'</span> + name)</span><br><span class="line"></span><br><span class="line">............</span><br></pre></td></tr></table></figure></p>
+<p><strong>Create a new file named “cell” under the “examples/imagenet” path and put the data folder into it</strong><br><strong>copy the file “examples/iamgenet/creat_imagenet.sh into newly created folder “cell” and change it as follows</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EXAMPLE=examples/imagenet/cell&#10;DATA=examples/imagenet/cell&#10;TOOLS=build/tools&#10;&#10;TRAIN_DATA_ROOT=examples/imagenet/cell/data/train&#10;VAL_DATA_ROOT=examples/imagenet/cell/data/val&#10;&#10;RESIZE=true # if the images do not need resize, set it to &#34;false&#34;</span><br></pre></td></tr></table></figure></p>
+<p>run command: <code>./examples/imagenet/myself/create_imagenet.sh</code><br>then lmdb file will be generated under cell folder.</p>
+<h4 id="2"><a href="#2" class="headerlink" title="2. "></a><strong>2. </strong></h4><h3 id="ERROR-amp-REASION"><a href="#ERROR-amp-REASION" class="headerlink" title="ERROR &amp; REASION"></a>ERROR &amp; REASION</h3><h4 id="Error-1-Out-of-memory"><a href="#Error-1-Out-of-memory" class="headerlink" title="Error 1: Out of memory"></a>Error 1: Out of memory</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">F0420 13:29:52.527748 10836 syncedmem.cpp:56] Check failed: error == cudaSuccess (2 vs. 0)  out of memory&#10;*** Check failure stack trace: ***&#10;    @     0x7f6cb7656dbd  google::LogMessage::Fail()&#10;    @     0x7f6cb7658cf8  google::LogMessage::SendToLog()&#10;    @     0x7f6cb7656953  google::LogMessage::Flush()&#10;    @     0x7f6cb765962e  google::LogMessageFatal::~LogMessageFatal()&#10;    @     0x7f6cb7d5b021  caffe::SyncedMemory::to_gpu()&#10;    @     0x7f6cb7d5a389  caffe::SyncedMemory::mutable_gpu_data()&#10;    @     0x7f6cb7d3fdf2  caffe::Blob&#60;&#62;::mutable_gpu_data()&#10;    @     0x7f6cb7dca57f  caffe::CuDNNConvolutionLayer&#60;&#62;::Forward_gpu()&#10;    @     0x7f6cb7d71ec5  caffe::Net&#60;&#62;::ForwardFromTo()&#10;    @     0x7f6cb7d72237  caffe::Net&#60;&#62;::Forward()&#10;    @     0x7f6cb7d552c7  caffe::Solver&#60;&#62;::Step()&#10;    @     0x7f6cb7d55b89  caffe::Solver&#60;&#62;::Solve()&#10;    @           0x40806e  train()&#10;    @           0x40594c  main&#10;    @     0x7f6cb6969ec5  __libc_start_main&#10;    @           0x406081  (unknown)&#10;Aborted (core dumped)</span><br></pre></td></tr></table></figure>
+<h4 id="Reason"><a href="#Reason" class="headerlink" title="- Reason"></a>- Reason</h4><p>ERROR reasion: batch_size is too large!!! you should change the batch_size in train_val.prototxt file</p>
+<p>Notice: When you set the configuration of caffe model, something you should notice<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#34;batch_size&#34;: should not be larger than 100 if you use a single GPU to train the network.&#10;&#10;&#34;stepsize&#34;: should smaller than &#34;max_iter&#34; and also should be the divisor of &#34;max_iter&#34;.&#10;&#10;&#34;test_iter&#34;: should be the multiple of (val_size / batch_size) [val_size is the size of val data, and the batch_size describe the batch size of val data].&#10;&#10;&#34;test_interval&#34; should better be the multiple of (train_size / batch_size) [train_size is the size of your train data, and the batch_size describe the batch size of train data].&#10;&#10;Since the result is better when you train on your whole train dataset. and this variable determine the model should be test after every how many iterations.&#10;&#10;&#34;stepsize&#34;: determine the &#34;base_lr&#34; should be reduced by &#34;weight_decay&#34; value after how many times iterations.&#10;&#10;&#34;snapshot&#34;: determine the intermidiate results should be stored every how many times of iterations.&#10;&#10;&#34;snapshot_prefix&#34;: determine the directory of storing the snapshot results</span><br></pre></td></tr></table></figure></p>
+<p>One example of prototxt configuration:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#####################&#10;## solver.prototxt ##&#10;#####################&#10;&#10;net: &#34;examples/imagenet/cell/train_val.prototxt&#34;&#10;test_iter: 40&#10;test_interval: 40&#10;base_lr: 0.01&#10;lr_policy: &#34;step&#34;&#10;gamma: 0.1&#10;stepsize: 100000&#10;display: 20&#10;max_iter: 10000&#10;momentum: 0.9&#10;weight_decay: 0.0005&#10;snapshot: 1000&#10;snapshot_prefix: &#34;examples/imagenet/cell/model/caffenet_train&#34;&#10;solver_mode: GPU&#10;&#10;&#10;########################&#10;## train_val.prototxt ##&#10;########################&#10;&#10;name: &#34;CaffeNet&#34;&#10;layer &#123;&#10;  name: &#34;data&#34;&#10;  type: &#34;Data&#34;&#10;  top: &#34;data&#34;&#10;  top: &#34;label&#34;&#10;  include &#123;&#10;    phase: TRAIN&#10;  &#125;&#10;  transform_param &#123;&#10;    mirror: true&#10;    crop_size: 227&#10;    mean_file: &#34;examples/imagenet/cell/imagenet_mean.binaryproto&#34;&#10;  &#125;&#10;# mean pixel / channel-wise mean instead of mean image&#10;#  transform_param &#123;&#10;#    crop_size: 227&#10;#    mean_value: 104&#10;#    mean_value: 117&#10;#    mean_value: 123&#10;#    mirror: true&#10;#  &#125;&#10;  data_param &#123;&#10;    source: &#34;examples/imagenet/cell/train_lmdb&#34;&#10;    batch_size: 250&#10;    backend: LMDB&#10;  &#125;&#10;&#125;&#10;layer &#123;&#10;  name: &#34;data&#34;&#10;  type: &#34;Data&#34;&#10;  top: &#34;data&#34;&#10;  top: &#34;label&#34;&#10;  include &#123;&#10;    phase: TEST&#10;  &#125;&#10;  transform_param &#123;&#10;    mirror: false&#10;    crop_size: 227&#10;    mean_file: &#34;examples/imagenet/cell/imagenet_mean.binaryproto&#34;&#10;  &#125;&#10;# mean pixel / channel-wise mean instead of mean image&#10;#  transform_param &#123;&#10;#    crop_size: 227&#10;#    mean_value: 104&#10;#    mean_value: 117&#10;#    mean_value: 123&#10;#    mirror: false&#10;#  &#125;&#10;  data_param &#123;&#10;    source: &#34;examples/imagenet/cell/val_lmdb&#34;&#10;    batch_size: 50&#10;    backend: LMDB&#10;  &#125;&#10;&#125;</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Caffe Training Note]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/04/21/Caffe-Training-Experiment/</url>
+      <content type="html"><![CDATA[<p>Caffe is an open-source deep learning framework originally created by Yangqing Jia which allows you to leverage your GPU for training neural networks. As opposed to other deep learning frameworks like Theano or Torch you don’t have to program the algorithms yourself; instead you specify your network by means of configuration files. Obviously this approach is less time consuming than programming everything on your own, but it also forces you to stay within the boundaries of the framework, of course. Practically though this won’t matter most of the time as the framework Caffe provides is quite powerful and continuously advanced.</p>
+<a id="more"></a>
+<p>Defining the Model and Meta-Parameters</p>
+<p>Training of a model and its application requires at least three configuration files. The format of those configuration files follows an interface description language called protocol buffers. It supeficially resembles JSON but is significantly different and actually supposed to replace it in use cases where the data document needs to be validateable (by means of a custom schema – like this one for Caffe) and serializable.</p>
+<p>For training you need one prototxt-file keeping the meta-parameters (config.prototxt) of the training and the model and another for defining the graph of the network (model_train_test.prototxt) – connecting the layers in an acyclical and directed fashion. Note that the data flows from bottom  to top  with regards to how the order of layers is specified. The example network here is composed of five layers:</p>
+<ol>
+<li>data layer (one for TRAINing and one for TESTing)</li>
+<li>inner product layer (the weights I)</li>
+<li>rectified linear units (the hidden layer)</li>
+<li>inner product layer (the weights II)</li>
+<li>output layer (Soft Max for classification)<br> A. soft max layer giving the loss<br> B. accuracy layer – so we can see how the network improves while training.</li>
+</ol>
+<h3 id="File-structure"><a href="#File-structure" class="headerlink" title="File structure"></a>File structure</h3><p>Relevant files</p>
+<ul>
+<li>the <strong>net prototxt</strong>, defining the architecture and pointing to the train/test data</li>
+<li>the <strong>solver prototxt</strong>, defining the learning parameters</li>
+</ul>
+<h3 id="Error-amp-Solution-tips"><a href="#Error-amp-Solution-tips" class="headerlink" title="Error &amp; Solution tips"></a>Error &amp; Solution tips</h3><p>If the batch_size is small but still get the error out of memory, it might be some other processes are using GPU at the same time using command <code>nvidia-smi</code> to check your GPU memory.</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Blog Configuration]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/04/20/Blog-Build-Instruction/</url>
+      <content type="html"><![CDATA[<h1 id="Creat-a-tags-cloud-page"><a href="#Creat-a-tags-cloud-page" class="headerlink" title="Creat a tags cloud page"></a>Creat a tags cloud page</h1><h3 id="generate-a-new-page-named-“tags”"><a href="#generate-a-new-page-named-“tags”" class="headerlink" title="generate a new page named “tags”."></a>generate a new page named “tags”.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">"tags"</span></span><br></pre></td></tr></table></figure>
+<h3 id="edit-the-new-generated-file-“-source-tags-index-md”"><a href="#edit-the-new-generated-file-“-source-tags-index-md”" class="headerlink" title="edit the new generated file “./source/tags/index.md”"></a>edit the new generated file “./source/tags/index.md”</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: All tags</span><br><span class="line">date: <span class="number">2014</span>-<span class="number">12</span>-<span class="number">22</span> <span class="number">12</span>:<span class="number">39</span>:<span class="number">04</span></span><br><span class="line"><span class="built_in">type</span>: <span class="string">"tags"</span></span><br><span class="line">comments: <span class="literal">false</span>  <span class="comment">## do not activate the disqus function</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h3 id="add-the-“tags”-into-“menu”-open-the-config-yml-in-blog-root-path-and-add"><a href="#add-the-“tags”-into-“menu”-open-the-config-yml-in-blog-root-path-and-add" class="headerlink" title="add the “tags” into “menu”: open the _config.yml in blog root path and add:"></a>add the “tags” into “menu”: <em>open the _config.yml in blog root path and add:</em></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /</span><br><span class="line">  archives: /archives</span><br><span class="line">  tags: /tags</span><br></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
