@@ -5,7 +5,7 @@
   <link href="/Acadeblog/atom.xml" rel="self"/>
   
   <link href="http://monaen.github.io/Acadeblog/"/>
-  <updated>2016-06-02T17:54:07.000Z</updated>
+  <updated>2016-06-04T11:10:37.000Z</updated>
   <id>http://monaen.github.io/Acadeblog/</id>
   
   <author>
@@ -16,11 +16,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Celebrate the birthday of My personal Academic blog</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/06/04/Birthday/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/06/04/Birthday/</id>
+    <published>2016-06-03T16:00:00.000Z</published>
+    <updated>2016-06-04T11:10:37.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Blog" scheme="http://monaen.github.io/Acadeblog/categories/Blog/"/>
+    
+    
+      <category term="Blog" scheme="http://monaen.github.io/Acadeblog/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to make great deep model</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/06/04/How-to-make-great-deep-model/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/06/04/How-to-make-great-deep-model/</id>
+    <published>2016-06-03T16:00:00.000Z</published>
+    <updated>2016-06-04T11:10:38.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/categories/Deep-Learning/"/>
+    
+    
+      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mxnet note</title>
     <link href="http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/"/>
     <id>http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/</id>
     <published>2016-06-01T16:00:00.000Z</published>
-    <updated>2016-06-02T17:54:07.000Z</updated>
+    <updated>2016-06-04T10:20:37.000Z</updated>
     
     <content type="html">&lt;p&gt;Here we briefly introduce how to train your own network based on your own dataset using &lt;a href=&quot;https://github.com/dmlc/mxnet&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mxnet&lt;/a&gt; – a lightweight deep learning framework designed for both efficiency and flexibility.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Training-your-own-data-using-Mxnet&quot;&gt;&lt;a href=&quot;#Training-your-own-data-using-Mxnet&quot; class=&quot;headerlink&quot; title=&quot;Training your own data using Mxnet !!!&quot;&gt;&lt;/a&gt;Training your own data using Mxnet !!!&lt;/h3&gt;</content>
@@ -34,11 +74,11 @@
       <category term="note" scheme="http://monaen.github.io/Acadeblog/categories/note/"/>
     
     
-      <category term="DeepLearning" scheme="http://monaen.github.io/Acadeblog/tags/DeepLearning/"/>
+      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
     
       <category term="Mxnet" scheme="http://monaen.github.io/Acadeblog/tags/Mxnet/"/>
     
-      <category term="Note" scheme="http://monaen.github.io/Acadeblog/tags/Note/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
     
   </entry>
   
@@ -47,9 +87,23 @@
     <link href="http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/"/>
     <id>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</id>
     <published>2016-06-01T16:00:00.000Z</published>
-    <updated>2016-06-03T17:17:09.000Z</updated>
+    <updated>2016-06-04T11:10:39.000Z</updated>
     
     <content type="html">&lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/Acadeblog/images/test.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;test for the code type &lt;code&gt;inline type&lt;/code&gt; inline type&lt;br&gt;block type&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;funtion&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(number)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; number + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;pre&gt;dfafdsfadfdsagdsfa
+&lt;code style=&quot;background: #333333;color:white;&quot;&gt;
+int t = 0;
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+
+
+
+
 </content>
     
     <summary type="html">
@@ -58,14 +112,14 @@
     
     </summary>
     
-      <category term="note" scheme="http://monaen.github.io/Acadeblog/categories/note/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
     
     
-      <category term="deep learning" scheme="http://monaen.github.io/Acadeblog/tags/deep-learning/"/>
+      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
     
-      <category term="training tips" scheme="http://monaen.github.io/Acadeblog/tags/training-tips/"/>
+      <category term="Training Tips" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tips/"/>
     
-      <category term="training tricks" scheme="http://monaen.github.io/Acadeblog/tags/training-tricks/"/>
+      <category term="Training Tricks" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tricks/"/>
     
   </entry>
   
@@ -74,7 +128,7 @@
     <link href="http://monaen.github.io/Acadeblog/2016/05/20/SomethingAboutMatlab/"/>
     <id>http://monaen.github.io/Acadeblog/2016/05/20/SomethingAboutMatlab/</id>
     <published>2016-05-19T16:00:00.000Z</published>
-    <updated>2016-05-23T16:49:30.000Z</updated>
+    <updated>2016-06-04T10:20:15.000Z</updated>
     
     <content type="html">&lt;p&gt;This blog records some useful tricks about matlab, and such tricks can help write matlab codes more efficiently and easy to understand…&lt;/p&gt;
 &lt;h2 id=&quot;matlab-writing-styles&quot;&gt;&lt;a href=&quot;#matlab-writing-styles&quot; class=&quot;headerlink&quot; title=&quot;matlab writing styles&quot;&gt;&lt;/a&gt;matlab writing styles&lt;/h2&gt;&lt;ul&gt;
@@ -90,12 +144,12 @@
     
     </summary>
     
-      <category term="matlab" scheme="http://monaen.github.io/Acadeblog/categories/matlab/"/>
+      <category term="Matlab" scheme="http://monaen.github.io/Acadeblog/categories/Matlab/"/>
     
     
-      <category term="command" scheme="http://monaen.github.io/Acadeblog/tags/command/"/>
+      <category term="Command" scheme="http://monaen.github.io/Acadeblog/tags/Command/"/>
     
-      <category term="matlab" scheme="http://monaen.github.io/Acadeblog/tags/matlab/"/>
+      <category term="Matlab" scheme="http://monaen.github.io/Acadeblog/tags/Matlab/"/>
     
   </entry>
   
@@ -104,7 +158,7 @@
     <link href="http://monaen.github.io/Acadeblog/2016/05/20/PRML_readingnotes/"/>
     <id>http://monaen.github.io/Acadeblog/2016/05/20/PRML_readingnotes/</id>
     <published>2016-05-19T16:00:00.000Z</published>
-    <updated>2016-06-02T14:49:12.000Z</updated>
+    <updated>2016-06-04T10:20:03.000Z</updated>
     
     <content type="html">&lt;p&gt;The second chapter&lt;/p&gt;
 &lt;ul&gt;
@@ -130,9 +184,9 @@
       <category term="PRML" scheme="http://monaen.github.io/Acadeblog/categories/PRML/"/>
     
     
-      <category term="PRML" scheme="http://monaen.github.io/Acadeblog/tags/PRML/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
     
-      <category term="notes" scheme="http://monaen.github.io/Acadeblog/tags/notes/"/>
+      <category term="PRML" scheme="http://monaen.github.io/Acadeblog/tags/PRML/"/>
     
   </entry>
   
@@ -141,7 +195,7 @@
     <link href="http://monaen.github.io/Acadeblog/2016/05/03/Caffe-Learning-Notes1/"/>
     <id>http://monaen.github.io/Acadeblog/2016/05/03/Caffe-Learning-Notes1/</id>
     <published>2016-05-02T16:00:00.000Z</published>
-    <updated>2016-05-03T16:29:43.000Z</updated>
+    <updated>2016-06-04T10:20:47.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;Define-the-‘’CaffeNet’’-by-iPython&quot;&gt;&lt;a href=&quot;#Define-the-‘’CaffeNet’’-by-iPython&quot; class=&quot;headerlink&quot; title=&quot;Define the ‘’CaffeNet’’ by iPython&quot;&gt;&lt;/a&gt;Define the ‘’CaffeNet’’ by iPython&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def conv_relu(bottom, ks, nout, stride = 1, pad = 0, group = 1,&amp;#10;              param = learned_param,&amp;#10;              weight_filler=dict(type=&amp;#39;gaussian&amp;#39;, std=0.01),&amp;#10;              bias_filler=dict(type=&amp;#39;constant&amp;#39;, value=0.1)):&amp;#10;    &amp;#39;&amp;#39;&amp;#39; ks: is the kernel size&amp;#10;        nout: is the number of output&amp;#10;        &amp;#10;        This convolution layer is defined to be preprossed with gaussian filler&amp;#10;    &amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;code&gt;weight_filler&lt;/code&gt; is the &lt;/p&gt;
@@ -153,12 +207,12 @@
     
     </summary>
     
-      <category term="notes" scheme="http://monaen.github.io/Acadeblog/categories/notes/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
     
     
       <category term="Caffe" scheme="http://monaen.github.io/Acadeblog/tags/Caffe/"/>
     
-      <category term="notes" scheme="http://monaen.github.io/Acadeblog/tags/notes/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
     
   </entry>
   
@@ -167,7 +221,7 @@
     <link href="http://monaen.github.io/Acadeblog/2016/04/21/cs231n-note/"/>
     <id>http://monaen.github.io/Acadeblog/2016/04/21/cs231n-note/</id>
     <published>2016-04-20T16:00:00.000Z</published>
-    <updated>2016-04-28T07:49:16.000Z</updated>
+    <updated>2016-06-04T10:21:41.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;Notes-for-Class-CS231n&quot;&gt;&lt;a href=&quot;#Notes-for-Class-CS231n&quot; class=&quot;headerlink&quot; title=&quot;Notes for Class CS231n&quot;&gt;&lt;/a&gt;Notes for Class CS231n&lt;/h1&gt;&lt;p&gt;This page is the learning notes of Class &lt;a href=&quot;http://cs231n.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CS231n&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -202,12 +256,12 @@
     
     </summary>
     
-      <category term="note" scheme="http://monaen.github.io/Acadeblog/categories/note/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
     
     
-      <category term="deep learning" scheme="http://monaen.github.io/Acadeblog/tags/deep-learning/"/>
+      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
     
-      <category term="note" scheme="http://monaen.github.io/Acadeblog/tags/note/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
     
   </entry>
   
@@ -216,7 +270,7 @@
     <link href="http://monaen.github.io/Acadeblog/2016/04/21/caffe/"/>
     <id>http://monaen.github.io/Acadeblog/2016/04/21/caffe/</id>
     <published>2016-04-20T16:00:00.000Z</published>
-    <updated>2016-04-21T03:21:53.000Z</updated>
+    <updated>2016-06-04T10:21:26.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;ImageNet&quot;&gt;&lt;a href=&quot;#ImageNet&quot; class=&quot;headerlink&quot; title=&quot;ImageNet&quot;&gt;&lt;/a&gt;ImageNet&lt;/h2&gt;&lt;p&gt;This part is a simplified instruction of training own data using &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&quot;1-Preparing-the-dataset&quot;&gt;&lt;a href=&quot;#1-Preparing-the-dataset&quot; class=&quot;headerlink&quot; title=&quot;1. Preparing the dataset&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. Preparing the dataset&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;The final dataset should be like this:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;data&amp;#10;   -- train&amp;#10;      -- train1.jpg&amp;#10;&amp;#9;  -- train2.jpg&amp;#10;&amp;#9;  -- train3.jpg&amp;#10;&amp;#9;     ......&amp;#10;   -- val&amp;#10;&amp;#9;  -- val1.jpg&amp;#10;&amp;#9;  -- val2.jpg&amp;#10;&amp;#9;  -- val3.jpg&amp;#10;&amp;#9;     ......&amp;#10;   -- train.txt&amp;#10;   -- val.txt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -239,14 +293,14 @@
     
     </summary>
     
-      <category term="note" scheme="http://monaen.github.io/Acadeblog/categories/note/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
     
     
-      <category term="caffe" scheme="http://monaen.github.io/Acadeblog/tags/caffe/"/>
+      <category term="Caffe" scheme="http://monaen.github.io/Acadeblog/tags/Caffe/"/>
     
-      <category term="deep learning" scheme="http://monaen.github.io/Acadeblog/tags/deep-learning/"/>
+      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
     
-      <category term="note" scheme="http://monaen.github.io/Acadeblog/tags/note/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
     
   </entry>
   
@@ -255,7 +309,7 @@
     <link href="http://monaen.github.io/Acadeblog/2016/04/21/Caffe-Training-Experiment/"/>
     <id>http://monaen.github.io/Acadeblog/2016/04/21/Caffe-Training-Experiment/</id>
     <published>2016-04-20T16:00:00.000Z</published>
-    <updated>2016-05-03T14:49:54.000Z</updated>
+    <updated>2016-06-04T10:21:06.000Z</updated>
     
     <content type="html">&lt;p&gt;Caffe is an open-source deep learning framework originally created by Yangqing Jia which allows you to leverage your GPU for training neural networks. As opposed to other deep learning frameworks like Theano or Torch you don’t have to program the algorithms yourself; instead you specify your network by means of configuration files. Obviously this approach is less time consuming than programming everything on your own, but it also forces you to stay within the boundaries of the framework, of course. Practically though this won’t matter most of the time as the framework Caffe provides is quite powerful and continuously advanced.&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -283,12 +337,12 @@
     
     </summary>
     
-      <category term="note" scheme="http://monaen.github.io/Acadeblog/categories/note/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
     
     
-      <category term="deep learning" scheme="http://monaen.github.io/Acadeblog/tags/deep-learning/"/>
+      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
     
-      <category term="note" scheme="http://monaen.github.io/Acadeblog/tags/note/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
     
   </entry>
   
