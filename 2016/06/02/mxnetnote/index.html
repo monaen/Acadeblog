@@ -17,16 +17,25 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/Acadeblog/atom.xml">
     
-    <meta name="description" content="Here we briefly introduce how to train your own network based on your own dataset using Mxnet – a lightweight deep learning framework designed for both efficiency and flexibility.">
+    <meta name="description" content="Refer to some previous blog:
+
+http://blog.csdn.net/shuzfan/article/details/50037273 – about how to run the model
+http://blog.csdn.net/a350203223/article/details/50263737 – about how to generate rec da">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Mxnet note">
 <meta property="og:url" content="http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/index.html">
 <meta property="og:site_name" content="Free Wind">
-<meta property="og:description" content="Here we briefly introduce how to train your own network based on your own dataset using Mxnet – a lightweight deep learning framework designed for both efficiency and flexibility.">
-<meta property="og:updated_time" content="2016-06-04T10:20:37.000Z">
+<meta property="og:description" content="Refer to some previous blog:
+
+http://blog.csdn.net/shuzfan/article/details/50037273 – about how to run the model
+http://blog.csdn.net/a350203223/article/details/50263737 – about how to generate rec da">
+<meta property="og:updated_time" content="2016-06-05T14:33:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mxnet note">
-<meta name="twitter:description" content="Here we briefly introduce how to train your own network based on your own dataset using Mxnet – a lightweight deep learning framework designed for both efficiency and flexibility.">
+<meta name="twitter:description" content="Refer to some previous blog:
+
+http://blog.csdn.net/shuzfan/article/details/50037273 – about how to run the model
+http://blog.csdn.net/a350203223/article/details/50263737 – about how to generate rec da">
 <meta name="twitter:creator" content="@https://twitter.com/naenmong">
     
         <meta rel="publisher" content="https://plus.google.com/https://plus.google.com/u/0/105343020684770260062/posts"/>
@@ -247,8 +256,36 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>Here we briefly introduce how to train your own network based on your own dataset using <a href="https://github.com/dmlc/mxnet" target="_blank" rel="external">Mxnet</a> – a lightweight deep learning framework designed for both efficiency and flexibility.<br><a id="more"></a></p>
-<h3 id="Training-your-own-data-using-Mxnet"><a href="#Training-your-own-data-using-Mxnet" class="headerlink" title="Training your own data using Mxnet !!!"></a>Training your own data using Mxnet !!!</h3>
+            <p>Refer to some previous blog:</p>
+<ul>
+<li><a href="http://blog.csdn.net/shuzfan/article/details/50037273" target="_blank" rel="external">http://blog.csdn.net/shuzfan/article/details/50037273</a> – about how to run the model</li>
+<li><a href="http://blog.csdn.net/a350203223/article/details/50263737" target="_blank" rel="external">http://blog.csdn.net/a350203223/article/details/50263737</a> – about how to generate rec data</li>
+<li><a href="http://blog.csdn.net/panda1942/article/details/50923006" target="_blank" rel="external">http://blog.csdn.net/panda1942/article/details/50923006</a> – about how to define network symbol</li>
+</ul>
+<h1 id="table-of-contents">Table of Contents</h1><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Training-your-own-data-using-Mxnet"><span class="toc-text">Training your own data using Mxnet !!!</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Installation"><span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Make-rec-image-file"><span class="toc-text">Make .rec image file</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Train-the-model"><span class="toc-text">Train the model</span></a></li></ol></li></ol>
+<p>Here we briefly introduce how to train your own network based on your own dataset using <a href="https://github.com/dmlc/mxnet" target="_blank" rel="external">Mxnet</a> – a lightweight deep learning framework designed for both efficiency and flexibility.<br><a id="more"></a></p>
+<h3 id="Training-your-own-data-using-Mxnet"><a href="#Training-your-own-data-using-Mxnet" class="headerlink" title="Training your own data using Mxnet !!!"></a>Training your own data using Mxnet !!!</h3><p>MXNet is a deep learning framework designed for both efficiency and flexibility. It allows you to mix the flavours of symbolic programming and imperative programming to maximize efficiency and productivity. The following part is about how to train ‘your’ model using this toolbox.</p>
+<h4 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h4><p>Please follow the official site to install the toolbox. Here we show a brief installation step:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install -y build-essential git libatlas-base-dev libopencv-dev</span><br><span class="line">git <span class="built_in">clone</span> --recursive https://github.com/dmlc/mxnet</span><br><span class="line"><span class="built_in">cd</span> mxnet; make -j4</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## python enable</span></span><br><span class="line"></span><br><span class="line">sudo apt-get install python-numpy</span><br><span class="line"></span><br><span class="line"><span class="comment">## import mxnet lib</span></span><br><span class="line"><span class="comment">## notice: you should install mxnet in root </span></span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> PYTHONPATH=~/mxnet/python</span><br><span class="line">cp -r ~/mxnet/python/mxnet .</span><br><span class="line">cp ~/mxnet/lib/libmxnet.so mxnet/</span><br></pre></td></tr></table></figure>
+<h4 id="Make-rec-image-file"><a href="#Make-rec-image-file" class="headerlink" title="Make .rec image file"></a>Make .rec image file</h4><p>Pack your own image dataset in a folder. The structure of the folder like:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data_1channel&#10;&#9;---- train&#10;&#9;&#9;---- train0.jpg&#10;&#9;&#9;---- train1.jpg&#10;&#9;&#9;......&#10;&#9;---- val&#10;&#9;&#9;---- val0.jpg&#10;&#9;&#9;---- val1.jpg&#10;&#9;&#9;......&#10;&#9;---- test&#10;&#9;&#9;---- test0.jpg&#10;&#9;&#9;---- test1.jpg&#10;&#9;&#9;......&#10;&#9;---- train.txt&#10;&#9;---- val.txt&#10;&#9;---- test.txt</span><br></pre></td></tr></table></figure></p>
+<p>And the text file should like this:<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1 0 test249.jpg&#10;2 0 test146.jpg&#10;3 0 test149.jpg&#10;......&#10;266 1 test.190.jpg&#10;267 1 test.191.jpg&#10;......&#10;362 2 test26.jpg&#10;363 2 test24.jpg</span><br></pre></td></tr></table></figure></p>
+<p>The first column is the index number of file, the 2nd column is label and the 3rd column is image file name.<br>Then you should write a bash file to utilize the im2rec(mxnet tool) to generate the .rec file and let’s name this bash file – convert.sh</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">mkdir data_mxnet</span><br><span class="line"></span><br><span class="line"><span class="comment">## Training Dataset</span></span><br><span class="line"></span><br><span class="line">DATA=data_1channel/train/</span><br><span class="line">DATATEXT=data_1channel/train.txt</span><br><span class="line">RECDATA=data_mxnet/train.rec</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Creating Rec Training Data..."</span></span><br><span class="line"></span><br><span class="line">~/mxnet/bin/im2rec <span class="variable">$DATATEXT</span> <span class="variable">$DATA</span> <span class="variable">$RECDATA</span> quality=<span class="number">100</span> resize=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## Validation Dataset</span></span><br><span class="line"></span><br><span class="line">DATA=data_1channel/val/</span><br><span class="line">DATATEXT=data_1channel/val.txt</span><br><span class="line">RECDATA=data_mxnet/val.rec</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Creating Rec Validation Data..."</span></span><br><span class="line"></span><br><span class="line">~/mxnet/bin/im2rec <span class="variable">$DATATEXT</span> <span class="variable">$DATA</span> <span class="variable">$RECDATA</span> quality=<span class="number">100</span> resize=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## Test Dataset</span></span><br><span class="line"></span><br><span class="line">DATA=data_1channel/<span class="built_in">test</span>/</span><br><span class="line">DATATEXT=data_1channel/test.txt</span><br><span class="line">RECDATA=data_mxnet/test.rec</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Creating Rec Test Data..."</span></span><br><span class="line"></span><br><span class="line">~/mxnet/bin/im2rec <span class="variable">$DATATEXT</span> <span class="variable">$DATA</span> <span class="variable">$RECDATA</span> quality=<span class="number">100</span> resize=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Done."</span></span><br></pre></td></tr></table></figure>
+<p>Then you will get a folder in your current path named <code>data_mxnet</code> which store the generated file: <code>train.rec</code>, <code>val.rec</code>, <code>test.rec</code>.</p>
+<h4 id="Train-the-model"><a href="#Train-the-model" class="headerlink" title="Train the model"></a>Train the model</h4><p>Make a new folder let’s say ‘mywork’, then copy the file <code>find_mxnet.py</code>, <code>symbol_alexnet.py</code>, <code>train_model.py</code>, <code>train_imagenet.py</code> in this folder. </p>
+<p>The python file – <code>find_mxnet.py</code> ensures mxnet toolbox is available; <code>symbol_alexnet.py</code> defines the network model, <code>train_model.py</code> provides the training strategy and <code>train_imagenet.py</code> defines the data iterator to load data, define the args parameters and load the network model defined in <code>symbol_alexnet.py</code> and finally run the model.</p>
+<ul>
+<li>For more detailed instructions please follow this blog: <a href="http://blog.csdn.net/shuzfan/article/details/50037273" target="_blank" rel="external">mxnet learning note 1</a></li>
+</ul>
+<p>Then open the Terminal and navigate to ‘mywork’ path then type:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python train_xx.py --data-dir=xx --model-prefix=xx --gpus=<span class="number">0</span></span><br></pre></td></tr></table></figure></p>
+<div class="alert danger no-icon"><p>Something you should notice: </p>
+<ul>
+<li>CUDA enable: assign USE_CUDA_PATH = /usr/local/cuda-7.0, USE_CUDNN = 1 in ‘config.hk’ file</li>
+<li>remake all file: make clean &amp;&amp; make -j16 (in mxnet root)</li>
+<li>if you want to use python please rerun setup.py</li>
+</ul>
+</div>
+
             
         </div>
     </div>
@@ -306,7 +343,7 @@
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#">
+                <a class="post-action-btn btn btn--default" href="#table-of-contents">
             
                 <i class="fa fa-list"></i>
             </a>
@@ -375,7 +412,7 @@
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#">
+                <a class="post-action-btn btn btn--default" href="#table-of-contents">
             
                 <i class="fa fa-list"></i>
             </a>

@@ -5,7 +5,7 @@
   <link href="/Acadeblog/atom.xml" rel="self"/>
   
   <link href="http://monaen.github.io/Acadeblog/"/>
-  <updated>2016-06-04T11:47:23.000Z</updated>
+  <updated>2016-06-05T13:43:38.000Z</updated>
   <id>http://monaen.github.io/Acadeblog/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Free Wind -- Blog for Academic Usage</title>
-    <link href="http://monaen.github.io/Acadeblog/2016/06/04/Birthday/"/>
-    <id>http://monaen.github.io/Acadeblog/2016/06/04/Birthday/</id>
-    <published>2016-06-03T16:00:00.000Z</published>
-    <updated>2016-06-04T11:47:23.000Z</updated>
+    <link href="http://monaen.github.io/Acadeblog/2016/06/05/Birthday/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/06/05/Birthday/</id>
+    <published>2016-06-05T13:43:38.000Z</published>
+    <updated>2016-06-05T13:43:38.000Z</updated>
     
     <content type="html">&lt;p&gt;This blog is constructed using the &lt;a href=&quot;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tranquilpeak&lt;/a&gt; template and thanks for this awesome freamwork and its provider &lt;a href=&quot;https://github.com/LouisBarranqueiro&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;LouisBarranqueiro&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -63,14 +63,49 @@
     <link href="http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/"/>
     <id>http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/</id>
     <published>2016-06-01T16:00:00.000Z</published>
-    <updated>2016-06-04T10:20:37.000Z</updated>
+    <updated>2016-06-05T14:33:01.000Z</updated>
     
-    <content type="html">&lt;p&gt;Here we briefly introduce how to train your own network based on your own dataset using &lt;a href=&quot;https://github.com/dmlc/mxnet&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mxnet&lt;/a&gt; – a lightweight deep learning framework designed for both efficiency and flexibility.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Training-your-own-data-using-Mxnet&quot;&gt;&lt;a href=&quot;#Training-your-own-data-using-Mxnet&quot; class=&quot;headerlink&quot; title=&quot;Training your own data using Mxnet !!!&quot;&gt;&lt;/a&gt;Training your own data using Mxnet !!!&lt;/h3&gt;</content>
+    <content type="html">&lt;p&gt;Refer to some previous blog:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/shuzfan/article/details/50037273&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/shuzfan/article/details/50037273&lt;/a&gt; – about how to run the model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/a350203223/article/details/50263737&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/a350203223/article/details/50263737&lt;/a&gt; – about how to generate rec data&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/panda1942/article/details/50923006&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/panda1942/article/details/50923006&lt;/a&gt; – about how to define network symbol&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- toc --&gt;
+&lt;p&gt;Here we briefly introduce how to train your own network based on your own dataset using &lt;a href=&quot;https://github.com/dmlc/mxnet&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mxnet&lt;/a&gt; – a lightweight deep learning framework designed for both efficiency and flexibility.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Training-your-own-data-using-Mxnet&quot;&gt;&lt;a href=&quot;#Training-your-own-data-using-Mxnet&quot; class=&quot;headerlink&quot; title=&quot;Training your own data using Mxnet !!!&quot;&gt;&lt;/a&gt;Training your own data using Mxnet !!!&lt;/h3&gt;&lt;p&gt;MXNet is a deep learning framework designed for both efficiency and flexibility. It allows you to mix the flavours of symbolic programming and imperative programming to maximize efficiency and productivity. The following part is about how to train ‘your’ model using this toolbox.&lt;/p&gt;
+&lt;h4 id=&quot;Installation&quot;&gt;&lt;a href=&quot;#Installation&quot; class=&quot;headerlink&quot; title=&quot;Installation&quot;&gt;&lt;/a&gt;Installation&lt;/h4&gt;&lt;p&gt;Please follow the official site to install the toolbox. Here we show a brief installation step:&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install -y build-essential git libatlas-base-dev libopencv-dev&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; --recursive https://github.com/dmlc/mxnet&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; mxnet; make -j4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## python enable&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install python-numpy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## import mxnet lib&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## notice: you should install mxnet in root &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;export&lt;/span&gt; PYTHONPATH=~/mxnet/python&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cp -r ~/mxnet/python/mxnet .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cp ~/mxnet/lib/libmxnet.so mxnet/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;Make-rec-image-file&quot;&gt;&lt;a href=&quot;#Make-rec-image-file&quot; class=&quot;headerlink&quot; title=&quot;Make .rec image file&quot;&gt;&lt;/a&gt;Make .rec image file&lt;/h4&gt;&lt;p&gt;Pack your own image dataset in a folder. The structure of the folder like:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;data_1channel&amp;#10;&amp;#9;---- train&amp;#10;&amp;#9;&amp;#9;---- train0.jpg&amp;#10;&amp;#9;&amp;#9;---- train1.jpg&amp;#10;&amp;#9;&amp;#9;......&amp;#10;&amp;#9;---- val&amp;#10;&amp;#9;&amp;#9;---- val0.jpg&amp;#10;&amp;#9;&amp;#9;---- val1.jpg&amp;#10;&amp;#9;&amp;#9;......&amp;#10;&amp;#9;---- test&amp;#10;&amp;#9;&amp;#9;---- test0.jpg&amp;#10;&amp;#9;&amp;#9;---- test1.jpg&amp;#10;&amp;#9;&amp;#9;......&amp;#10;&amp;#9;---- train.txt&amp;#10;&amp;#9;---- val.txt&amp;#10;&amp;#9;---- test.txt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;And the text file should like this:&lt;br&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1 0 test249.jpg&amp;#10;2 0 test146.jpg&amp;#10;3 0 test149.jpg&amp;#10;......&amp;#10;266 1 test.190.jpg&amp;#10;267 1 test.191.jpg&amp;#10;......&amp;#10;362 2 test26.jpg&amp;#10;363 2 test24.jpg&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;The first column is the index number of file, the 2nd column is label and the 3rd column is image file name.&lt;br&gt;Then you should write a bash file to utilize the im2rec(mxnet tool) to generate the .rec file and let’s name this bash file – convert.sh&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir data_mxnet&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Training Dataset&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DATA=data_1channel/train/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DATATEXT=data_1channel/train.txt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;RECDATA=data_mxnet/train.rec&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Creating Rec Training Data...&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;~/mxnet/bin/im2rec &lt;span class=&quot;variable&quot;&gt;$DATATEXT&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$DATA&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$RECDATA&lt;/span&gt; quality=&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; resize=-&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Validation Dataset&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DATA=data_1channel/val/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DATATEXT=data_1channel/val.txt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;RECDATA=data_mxnet/val.rec&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Creating Rec Validation Data...&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;~/mxnet/bin/im2rec &lt;span class=&quot;variable&quot;&gt;$DATATEXT&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$DATA&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$RECDATA&lt;/span&gt; quality=&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; resize=-&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Test Dataset&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DATA=data_1channel/&lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DATATEXT=data_1channel/test.txt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;RECDATA=data_mxnet/test.rec&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Creating Rec Test Data...&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;~/mxnet/bin/im2rec &lt;span class=&quot;variable&quot;&gt;$DATATEXT&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$DATA&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$RECDATA&lt;/span&gt; quality=&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt; resize=-&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Done.&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Then you will get a folder in your current path named &lt;code&gt;data_mxnet&lt;/code&gt; which store the generated file: &lt;code&gt;train.rec&lt;/code&gt;, &lt;code&gt;val.rec&lt;/code&gt;, &lt;code&gt;test.rec&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;Train-the-model&quot;&gt;&lt;a href=&quot;#Train-the-model&quot; class=&quot;headerlink&quot; title=&quot;Train the model&quot;&gt;&lt;/a&gt;Train the model&lt;/h4&gt;&lt;p&gt;Make a new folder let’s say ‘mywork’, then copy the file &lt;code&gt;find_mxnet.py&lt;/code&gt;, &lt;code&gt;symbol_alexnet.py&lt;/code&gt;, &lt;code&gt;train_model.py&lt;/code&gt;, &lt;code&gt;train_imagenet.py&lt;/code&gt; in this folder. &lt;/p&gt;
+&lt;p&gt;The python file – &lt;code&gt;find_mxnet.py&lt;/code&gt; ensures mxnet toolbox is available; &lt;code&gt;symbol_alexnet.py&lt;/code&gt; defines the network model, &lt;code&gt;train_model.py&lt;/code&gt; provides the training strategy and &lt;code&gt;train_imagenet.py&lt;/code&gt; defines the data iterator to load data, define the args parameters and load the network model defined in &lt;code&gt;symbol_alexnet.py&lt;/code&gt; and finally run the model.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For more detailed instructions please follow this blog: &lt;a href=&quot;http://blog.csdn.net/shuzfan/article/details/50037273&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mxnet learning note 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then open the Terminal and navigate to ‘mywork’ path then type:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;python train_xx.py --data-dir=xx --model-prefix=xx --gpus=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;div class=&quot;alert danger no-icon&quot;&gt;&lt;p&gt;Something you should notice: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CUDA enable: assign USE_CUDA_PATH = /usr/local/cuda-7.0, USE_CUDNN = 1 in ‘config.hk’ file&lt;/li&gt;
+&lt;li&gt;remake all file: make clean &amp;amp;&amp;amp; make -j16 (in mxnet root)&lt;/li&gt;
+&lt;li&gt;if you want to use python please rerun setup.py&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content>
     
     <summary type="html">
     
-      &lt;p&gt;Here we briefly introduce how to train your own network based on your own dataset using &lt;a href=&quot;https://github.com/dmlc/mxnet&quot;&gt;Mxnet&lt;/a&gt; – a lightweight deep learning framework designed for both efficiency and flexibility.&lt;br&gt;
+      &lt;p&gt;Refer to some previous blog:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/shuzfan/article/details/50037273&quot;&gt;http://blog.csdn.net/shuzfan/article/details/50037273&lt;/a&gt; – about how to run the model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/a350203223/article/details/50263737&quot;&gt;http://blog.csdn.net/a350203223/article/details/50263737&lt;/a&gt; – about how to generate rec data&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/panda1942/article/details/50923006&quot;&gt;http://blog.csdn.net/panda1942/article/details/50923006&lt;/a&gt; – about how to define network symbol&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- toc --&gt;
+&lt;p&gt;Here we briefly introduce how to train your own network based on your own dataset using &lt;a href=&quot;https://github.com/dmlc/mxnet&quot;&gt;Mxnet&lt;/a&gt; – a lightweight deep learning framework designed for both efficiency and flexibility.&lt;br&gt;
     
     </summary>
     
@@ -90,23 +125,9 @@
     <link href="http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/"/>
     <id>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</id>
     <published>2016-06-01T16:00:00.000Z</published>
-    <updated>2016-06-04T11:10:39.000Z</updated>
+    <updated>2016-06-05T13:44:54.000Z</updated>
     
-    <content type="html">&lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/Acadeblog/images/test.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;test for the code type &lt;code&gt;inline type&lt;/code&gt; inline type&lt;br&gt;block type&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;funtion&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(number)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; number + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;pre&gt;dfafdsfadfdsagdsfa
-&lt;code style=&quot;background: #333333;color:white;&quot;&gt;
-int t = 0;
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-
-
-
-
-
+    <content type="html">&lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -346,33 +367,6 @@ int t = 0;
       <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
     
       <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Blog Configuration</title>
-    <link href="http://monaen.github.io/Acadeblog/2016/04/20/Blog-Build-Instruction/"/>
-    <id>http://monaen.github.io/Acadeblog/2016/04/20/Blog-Build-Instruction/</id>
-    <published>2016-04-19T16:00:00.000Z</published>
-    <updated>2016-04-20T13:23:52.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;Creat-a-tags-cloud-page&quot;&gt;&lt;a href=&quot;#Creat-a-tags-cloud-page&quot; class=&quot;headerlink&quot; title=&quot;Creat a tags cloud page&quot;&gt;&lt;/a&gt;Creat a tags cloud page&lt;/h1&gt;&lt;h3 id=&quot;generate-a-new-page-named-“tags”&quot;&gt;&lt;a href=&quot;#generate-a-new-page-named-“tags”&quot; class=&quot;headerlink&quot; title=&quot;generate a new page named “tags”.&quot;&gt;&lt;/a&gt;generate a new page named “tags”.&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo new page &lt;span class=&quot;string&quot;&gt;&quot;tags&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;edit-the-new-generated-file-“-source-tags-index-md”&quot;&gt;&lt;a href=&quot;#edit-the-new-generated-file-“-source-tags-index-md”&quot; class=&quot;headerlink&quot; title=&quot;edit the new generated file “./source/tags/index.md”&quot;&gt;&lt;/a&gt;edit the new generated file “./source/tags/index.md”&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;title: All tags&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;date: &lt;span class=&quot;number&quot;&gt;2014&lt;/span&gt;-&lt;span class=&quot;number&quot;&gt;12&lt;/span&gt;-&lt;span class=&quot;number&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;12&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;39&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;04&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;tags&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;comments: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;  &lt;span class=&quot;comment&quot;&gt;## do not activate the disqus function&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;---&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;add-the-“tags”-into-“menu”-open-the-config-yml-in-blog-root-path-and-add&quot;&gt;&lt;a href=&quot;#add-the-“tags”-into-“menu”-open-the-config-yml-in-blog-root-path-and-add&quot; class=&quot;headerlink&quot; title=&quot;add the “tags” into “menu”: open the _config.yml in blog root path and add:&quot;&gt;&lt;/a&gt;add the “tags” into “menu”: &lt;em&gt;open the _config.yml in blog root path and add:&lt;/em&gt;&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;menu:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  home: /&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  archives: /archives&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  tags: /tags&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Creat-a-tags-cloud-page&quot;&gt;&lt;a href=&quot;#Creat-a-tags-cloud-page&quot; class=&quot;headerlink&quot; title=&quot;Creat a tags cloud page&quot;&gt;&lt;/a&gt;Creat a tags clou
-    
-    </summary>
-    
-      <category term="configuration" scheme="http://monaen.github.io/Acadeblog/categories/configuration/"/>
-    
-    
-      <category term="blog" scheme="http://monaen.github.io/Acadeblog/tags/blog/"/>
-    
-      <category term="configuration" scheme="http://monaen.github.io/Acadeblog/tags/configuration/"/>
     
   </entry>
   

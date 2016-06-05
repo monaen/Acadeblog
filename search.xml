@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[Free Wind -- Blog for Academic Usage]]></title>
-      <url>http://monaen.github.io/Acadeblog/2016/06/04/Birthday/</url>
+      <url>http://monaen.github.io/Acadeblog/2016/06/05/Birthday/</url>
       <content type="html"><![CDATA[<p>This blog is constructed using the <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak" target="_blank" rel="external">Tranquilpeak</a> template and thanks for this awesome freamwork and its provider <a href="https://github.com/LouisBarranqueiro" target="_blank" rel="external">LouisBarranqueiro</a>.</p>
 ]]></content>
     </entry>
@@ -19,28 +19,42 @@
     <entry>
       <title><![CDATA[Mxnet note]]></title>
       <url>http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/</url>
-      <content type="html"><![CDATA[<p>Here we briefly introduce how to train your own network based on your own dataset using <a href="https://github.com/dmlc/mxnet" target="_blank" rel="external">Mxnet</a> – a lightweight deep learning framework designed for both efficiency and flexibility.<br><a id="more"></a></p>
-<h3 id="Training-your-own-data-using-Mxnet"><a href="#Training-your-own-data-using-Mxnet" class="headerlink" title="Training your own data using Mxnet !!!"></a>Training your own data using Mxnet !!!</h3>]]></content>
+      <content type="html"><![CDATA[<p>Refer to some previous blog:</p>
+<ul>
+<li><a href="http://blog.csdn.net/shuzfan/article/details/50037273" target="_blank" rel="external">http://blog.csdn.net/shuzfan/article/details/50037273</a> – about how to run the model</li>
+<li><a href="http://blog.csdn.net/a350203223/article/details/50263737" target="_blank" rel="external">http://blog.csdn.net/a350203223/article/details/50263737</a> – about how to generate rec data</li>
+<li><a href="http://blog.csdn.net/panda1942/article/details/50923006" target="_blank" rel="external">http://blog.csdn.net/panda1942/article/details/50923006</a> – about how to define network symbol</li>
+</ul>
+<!-- toc -->
+<p>Here we briefly introduce how to train your own network based on your own dataset using <a href="https://github.com/dmlc/mxnet" target="_blank" rel="external">Mxnet</a> – a lightweight deep learning framework designed for both efficiency and flexibility.<br><a id="more"></a></p>
+<h3 id="Training-your-own-data-using-Mxnet"><a href="#Training-your-own-data-using-Mxnet" class="headerlink" title="Training your own data using Mxnet !!!"></a>Training your own data using Mxnet !!!</h3><p>MXNet is a deep learning framework designed for both efficiency and flexibility. It allows you to mix the flavours of symbolic programming and imperative programming to maximize efficiency and productivity. The following part is about how to train ‘your’ model using this toolbox.</p>
+<h4 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h4><p>Please follow the official site to install the toolbox. Here we show a brief installation step:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install -y build-essential git libatlas-base-dev libopencv-dev</span><br><span class="line">git <span class="built_in">clone</span> --recursive https://github.com/dmlc/mxnet</span><br><span class="line"><span class="built_in">cd</span> mxnet; make -j4</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## python enable</span></span><br><span class="line"></span><br><span class="line">sudo apt-get install python-numpy</span><br><span class="line"></span><br><span class="line"><span class="comment">## import mxnet lib</span></span><br><span class="line"><span class="comment">## notice: you should install mxnet in root </span></span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> PYTHONPATH=~/mxnet/python</span><br><span class="line">cp -r ~/mxnet/python/mxnet .</span><br><span class="line">cp ~/mxnet/lib/libmxnet.so mxnet/</span><br></pre></td></tr></table></figure>
+<h4 id="Make-rec-image-file"><a href="#Make-rec-image-file" class="headerlink" title="Make .rec image file"></a>Make .rec image file</h4><p>Pack your own image dataset in a folder. The structure of the folder like:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data_1channel&#10;&#9;---- train&#10;&#9;&#9;---- train0.jpg&#10;&#9;&#9;---- train1.jpg&#10;&#9;&#9;......&#10;&#9;---- val&#10;&#9;&#9;---- val0.jpg&#10;&#9;&#9;---- val1.jpg&#10;&#9;&#9;......&#10;&#9;---- test&#10;&#9;&#9;---- test0.jpg&#10;&#9;&#9;---- test1.jpg&#10;&#9;&#9;......&#10;&#9;---- train.txt&#10;&#9;---- val.txt&#10;&#9;---- test.txt</span><br></pre></td></tr></table></figure></p>
+<p>And the text file should like this:<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1 0 test249.jpg&#10;2 0 test146.jpg&#10;3 0 test149.jpg&#10;......&#10;266 1 test.190.jpg&#10;267 1 test.191.jpg&#10;......&#10;362 2 test26.jpg&#10;363 2 test24.jpg</span><br></pre></td></tr></table></figure></p>
+<p>The first column is the index number of file, the 2nd column is label and the 3rd column is image file name.<br>Then you should write a bash file to utilize the im2rec(mxnet tool) to generate the .rec file and let’s name this bash file – convert.sh</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">mkdir data_mxnet</span><br><span class="line"></span><br><span class="line"><span class="comment">## Training Dataset</span></span><br><span class="line"></span><br><span class="line">DATA=data_1channel/train/</span><br><span class="line">DATATEXT=data_1channel/train.txt</span><br><span class="line">RECDATA=data_mxnet/train.rec</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Creating Rec Training Data..."</span></span><br><span class="line"></span><br><span class="line">~/mxnet/bin/im2rec <span class="variable">$DATATEXT</span> <span class="variable">$DATA</span> <span class="variable">$RECDATA</span> quality=<span class="number">100</span> resize=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## Validation Dataset</span></span><br><span class="line"></span><br><span class="line">DATA=data_1channel/val/</span><br><span class="line">DATATEXT=data_1channel/val.txt</span><br><span class="line">RECDATA=data_mxnet/val.rec</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Creating Rec Validation Data..."</span></span><br><span class="line"></span><br><span class="line">~/mxnet/bin/im2rec <span class="variable">$DATATEXT</span> <span class="variable">$DATA</span> <span class="variable">$RECDATA</span> quality=<span class="number">100</span> resize=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## Test Dataset</span></span><br><span class="line"></span><br><span class="line">DATA=data_1channel/<span class="built_in">test</span>/</span><br><span class="line">DATATEXT=data_1channel/test.txt</span><br><span class="line">RECDATA=data_mxnet/test.rec</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Creating Rec Test Data..."</span></span><br><span class="line"></span><br><span class="line">~/mxnet/bin/im2rec <span class="variable">$DATATEXT</span> <span class="variable">$DATA</span> <span class="variable">$RECDATA</span> quality=<span class="number">100</span> resize=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Done."</span></span><br></pre></td></tr></table></figure>
+<p>Then you will get a folder in your current path named <code>data_mxnet</code> which store the generated file: <code>train.rec</code>, <code>val.rec</code>, <code>test.rec</code>.</p>
+<h4 id="Train-the-model"><a href="#Train-the-model" class="headerlink" title="Train the model"></a>Train the model</h4><p>Make a new folder let’s say ‘mywork’, then copy the file <code>find_mxnet.py</code>, <code>symbol_alexnet.py</code>, <code>train_model.py</code>, <code>train_imagenet.py</code> in this folder. </p>
+<p>The python file – <code>find_mxnet.py</code> ensures mxnet toolbox is available; <code>symbol_alexnet.py</code> defines the network model, <code>train_model.py</code> provides the training strategy and <code>train_imagenet.py</code> defines the data iterator to load data, define the args parameters and load the network model defined in <code>symbol_alexnet.py</code> and finally run the model.</p>
+<ul>
+<li>For more detailed instructions please follow this blog: <a href="http://blog.csdn.net/shuzfan/article/details/50037273" target="_blank" rel="external">mxnet learning note 1</a></li>
+</ul>
+<p>Then open the Terminal and navigate to ‘mywork’ path then type:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python train_xx.py --data-dir=xx --model-prefix=xx --gpus=<span class="number">0</span></span><br></pre></td></tr></table></figure></p>
+<div class="alert danger no-icon"><p>Something you should notice: </p>
+<ul>
+<li>CUDA enable: assign USE_CUDA_PATH = /usr/local/cuda-7.0, USE_CUDNN = 1 in ‘config.hk’ file</li>
+<li>remake all file: make clean &amp;&amp; make -j16 (in mxnet root)</li>
+<li>if you want to use python please rerun setup.py</li>
+</ul>
+</div>
+]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Deep learning training tips]]></title>
       <url>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</url>
-      <content type="html"><![CDATA[<p>Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.<br><a id="more"></a><br><img src="/Acadeblog/images/test.jpg" alt=""></p>
-<p>test for the code type <code>inline type</code> inline type<br>block type<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">funtion</span><span class="params">(number)</span>:</span></span><br><span class="line">	<span class="keyword">return</span> number + <span class="number">1</span></span><br></pre></td></tr></table></figure></p>
-<pre>dfafdsfadfdsagdsfa
-<code style="background: #333333;color:white;">
-int t = 0;
-</code>
-</pre>
-
-
-
-
-
-
-
-
+      <content type="html"><![CDATA[<p>Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.<br><a id="more"></a></p>
 ]]></content>
     </entry>
     
@@ -149,15 +163,6 @@ int t = 0;
 <li>the <strong>solver prototxt</strong>, defining the learning parameters</li>
 </ul>
 <h3 id="Error-amp-Solution-tips"><a href="#Error-amp-Solution-tips" class="headerlink" title="Error &amp; Solution tips"></a>Error &amp; Solution tips</h3><p>If the batch_size is small but still get the error out of memory, it might be some other processes are using GPU at the same time using command <code>nvidia-smi</code> to check your GPU memory.</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Blog Configuration]]></title>
-      <url>http://monaen.github.io/Acadeblog/2016/04/20/Blog-Build-Instruction/</url>
-      <content type="html"><![CDATA[<h1 id="Creat-a-tags-cloud-page"><a href="#Creat-a-tags-cloud-page" class="headerlink" title="Creat a tags cloud page"></a>Creat a tags cloud page</h1><h3 id="generate-a-new-page-named-“tags”"><a href="#generate-a-new-page-named-“tags”" class="headerlink" title="generate a new page named “tags”."></a>generate a new page named “tags”.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">"tags"</span></span><br></pre></td></tr></table></figure>
-<h3 id="edit-the-new-generated-file-“-source-tags-index-md”"><a href="#edit-the-new-generated-file-“-source-tags-index-md”" class="headerlink" title="edit the new generated file “./source/tags/index.md”"></a>edit the new generated file “./source/tags/index.md”</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: All tags</span><br><span class="line">date: <span class="number">2014</span>-<span class="number">12</span>-<span class="number">22</span> <span class="number">12</span>:<span class="number">39</span>:<span class="number">04</span></span><br><span class="line"><span class="built_in">type</span>: <span class="string">"tags"</span></span><br><span class="line">comments: <span class="literal">false</span>  <span class="comment">## do not activate the disqus function</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h3 id="add-the-“tags”-into-“menu”-open-the-config-yml-in-blog-root-path-and-add"><a href="#add-the-“tags”-into-“menu”-open-the-config-yml-in-blog-root-path-and-add" class="headerlink" title="add the “tags” into “menu”: open the _config.yml in blog root path and add:"></a>add the “tags” into “menu”: <em>open the _config.yml in blog root path and add:</em></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /</span><br><span class="line">  archives: /archives</span><br><span class="line">  tags: /tags</span><br></pre></td></tr></table></figure>
 ]]></content>
     </entry>
     
