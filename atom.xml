@@ -63,15 +63,9 @@
     <link href="http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/"/>
     <id>http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/</id>
     <published>2016-06-01T16:00:00.000Z</published>
-    <updated>2016-06-05T14:33:01.000Z</updated>
+    <updated>2016-06-05T14:35:12.000Z</updated>
     
-    <content type="html">&lt;p&gt;Refer to some previous blog:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/shuzfan/article/details/50037273&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/shuzfan/article/details/50037273&lt;/a&gt; – about how to run the model&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/a350203223/article/details/50263737&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/a350203223/article/details/50263737&lt;/a&gt; – about how to generate rec data&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/panda1942/article/details/50923006&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/panda1942/article/details/50923006&lt;/a&gt; – about how to define network symbol&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- toc --&gt;
+    <content type="html">&lt;!-- toc --&gt;
 &lt;p&gt;Here we briefly introduce how to train your own network based on your own dataset using &lt;a href=&quot;https://github.com/dmlc/mxnet&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mxnet&lt;/a&gt; – a lightweight deep learning framework designed for both efficiency and flexibility.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Training-your-own-data-using-Mxnet&quot;&gt;&lt;a href=&quot;#Training-your-own-data-using-Mxnet&quot; class=&quot;headerlink&quot; title=&quot;Training your own data using Mxnet !!!&quot;&gt;&lt;/a&gt;Training your own data using Mxnet !!!&lt;/h3&gt;&lt;p&gt;MXNet is a deep learning framework designed for both efficiency and flexibility. It allows you to mix the flavours of symbolic programming and imperative programming to maximize efficiency and productivity. The following part is about how to train ‘your’ model using this toolbox.&lt;/p&gt;
 &lt;h4 id=&quot;Installation&quot;&gt;&lt;a href=&quot;#Installation&quot; class=&quot;headerlink&quot; title=&quot;Installation&quot;&gt;&lt;/a&gt;Installation&lt;/h4&gt;&lt;p&gt;Please follow the official site to install the toolbox. Here we show a brief installation step:&lt;/p&gt;
@@ -94,17 +88,16 @@
 &lt;li&gt;if you want to use python please rerun setup.py&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;h4 id=&quot;Refer-to-some-previous-blog&quot;&gt;&lt;a href=&quot;#Refer-to-some-previous-blog&quot; class=&quot;headerlink&quot; title=&quot;Refer to some previous blog:&quot;&gt;&lt;/a&gt;Refer to some previous blog:&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/shuzfan/article/details/50037273&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/shuzfan/article/details/50037273&lt;/a&gt; – about how to run the model&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/a350203223/article/details/50263737&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/a350203223/article/details/50263737&lt;/a&gt; – about how to generate rec data&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/panda1942/article/details/50923006&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/panda1942/article/details/50923006&lt;/a&gt; – about how to define network symbol&lt;/li&gt;
+&lt;/ul&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;Refer to some previous blog:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/shuzfan/article/details/50037273&quot;&gt;http://blog.csdn.net/shuzfan/article/details/50037273&lt;/a&gt; – about how to run the model&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/a350203223/article/details/50263737&quot;&gt;http://blog.csdn.net/a350203223/article/details/50263737&lt;/a&gt; – about how to generate rec data&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/panda1942/article/details/50923006&quot;&gt;http://blog.csdn.net/panda1942/article/details/50923006&lt;/a&gt; – about how to define network symbol&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- toc --&gt;
+      &lt;!-- toc --&gt;
 &lt;p&gt;Here we briefly introduce how to train your own network based on your own dataset using &lt;a href=&quot;https://github.com/dmlc/mxnet&quot;&gt;Mxnet&lt;/a&gt; – a lightweight deep learning framework designed for both efficiency and flexibility.&lt;br&gt;
     
     </summary>
