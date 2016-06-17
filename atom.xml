@@ -5,7 +5,7 @@
   <link href="/Acadeblog/atom.xml" rel="self"/>
   
   <link href="http://monaen.github.io/Acadeblog/"/>
-  <updated>2016-06-06T05:03:50.000Z</updated>
+  <updated>2016-06-17T12:00:44.000Z</updated>
   <id>http://monaen.github.io/Acadeblog/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Free Wind -- Blog for Academic Usage</title>
-    <link href="http://monaen.github.io/Acadeblog/2016/06/06/Birthday/"/>
-    <id>http://monaen.github.io/Acadeblog/2016/06/06/Birthday/</id>
-    <published>2016-06-06T05:03:50.000Z</published>
-    <updated>2016-06-06T05:03:50.000Z</updated>
+    <title>Free Wind</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/06/17/Birthday/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/06/17/Birthday/</id>
+    <published>2016-06-17T12:00:44.000Z</published>
+    <updated>2016-06-17T12:00:44.000Z</updated>
     
     <content type="html">&lt;p&gt;This blog is constructed using the &lt;a href=&quot;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tranquilpeak&lt;/a&gt; template and thanks for this awesome freamwork and its provider &lt;a href=&quot;https://github.com/LouisBarranqueiro&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;LouisBarranqueiro&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -35,6 +35,31 @@
     
     
       <category term="Blog" scheme="http://monaen.github.io/Acadeblog/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Interesting Books</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/06/10/InterestingBooks/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/06/10/InterestingBooks/</id>
+    <published>2016-06-09T16:00:00.000Z</published>
+    <updated>2016-06-17T12:39:02.000Z</updated>
+    
+    <content type="html">&lt;p&gt;I won’t stop believing that if one want to do something big, this first thing is to go with virtue and attitude. Many successful people have the habits that records their thoughts, their ideas or views, and some of them might be helpful to people to think like a “great” man!&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hackers and Painters: Big Ideas from the Computer Age&lt;/a&gt; – A book records those great ideas and thoughts of Paul Graham. &lt;a href=&quot;www.paulgraham.com/bio.html&quot;&gt;Bio&lt;/a&gt; &lt;a href=&quot;www.paulgraham.com/articles.html&quot;&gt;Essays&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I won’t stop believing that if one want to do something big, this first thing is to go with virtue and attitude. Many successful people have the habits that records their thoughts, their ideas or views, and some of them might be helpful to people to think like a “great” man!&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="books" scheme="http://monaen.github.io/Acadeblog/categories/books/"/>
+    
+    
+      <category term="Books" scheme="http://monaen.github.io/Acadeblog/tags/Books/"/>
     
   </entry>
   
@@ -85,33 +110,6 @@
     
     
       <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Deep learning training tips</title>
-    <link href="http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/"/>
-    <id>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</id>
-    <published>2016-06-01T16:00:00.000Z</published>
-    <updated>2016-06-05T13:44:54.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
-    
-    
-      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
-    
-      <category term="Training Tips" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tips/"/>
-    
-      <category term="Training Tricks" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tricks/"/>
     
   </entry>
   
@@ -171,6 +169,63 @@
   </entry>
   
   <entry>
+    <title>Deep learning training tips</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</id>
+    <published>2016-06-01T16:00:00.000Z</published>
+    <updated>2016-06-05T13:44:54.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
+    
+    
+      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
+    
+      <category term="Training Tips" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tips/"/>
+    
+      <category term="Training Tricks" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tricks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Something About Matlab</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/05/20/SomethingAboutMatlab/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/05/20/SomethingAboutMatlab/</id>
+    <published>2016-05-19T16:00:00.000Z</published>
+    <updated>2016-06-04T10:20:15.000Z</updated>
+    
+    <content type="html">&lt;p&gt;This blog records some useful tricks about matlab, and such tricks can help write matlab codes more efficiently and easy to understand…&lt;/p&gt;
+&lt;h2 id=&quot;matlab-writing-styles&quot;&gt;&lt;a href=&quot;#matlab-writing-styles&quot; class=&quot;headerlink&quot; title=&quot;matlab writing styles&quot;&gt;&lt;/a&gt;matlab writing styles&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;for&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;for i = 1:size(E, 1),&amp;#10;    v = E(i, 1); % variable&amp;#10;    x = E(i, 2); % value&amp;#10;&amp;#10;    ......&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Matlab-functions&quot;&gt;&lt;a href=&quot;#Matlab-functions&quot; class=&quot;headerlink&quot; title=&quot;Matlab functions&quot;&gt;&lt;/a&gt;Matlab functions&lt;/h2&gt;&lt;h3 id=&quot;accumarray-summary-the-values-by-index&quot;&gt;&lt;a href=&quot;#accumarray-summary-the-values-by-index&quot; class=&quot;headerlink&quot; title=&quot;* accumarray: summary the values by index&quot;&gt;&lt;/a&gt;* accumarray: summary the values by index&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;A = [10 20 30 40];&amp;#10;idx = [1 1 1 2];&amp;#10;result = accumarray(idx&amp;#39;,A)&amp;#10;&amp;#10;  result =&amp;#10;&amp;#10;      60&amp;#10;      40&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This blog records some useful tricks about matlab, and such tricks can help write matlab codes more efficiently and easy to understand…&lt;/
+    
+    </summary>
+    
+      <category term="Matlab" scheme="http://monaen.github.io/Acadeblog/categories/Matlab/"/>
+    
+    
+      <category term="Command" scheme="http://monaen.github.io/Acadeblog/tags/Command/"/>
+    
+      <category term="Matlab" scheme="http://monaen.github.io/Acadeblog/tags/Matlab/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PRML Reading notes</title>
     <link href="http://monaen.github.io/Acadeblog/2016/05/20/PRML_readingnotes/"/>
     <id>http://monaen.github.io/Acadeblog/2016/05/20/PRML_readingnotes/</id>
@@ -204,36 +259,6 @@
       <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
     
       <category term="PRML" scheme="http://monaen.github.io/Acadeblog/tags/PRML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Something About Matlab</title>
-    <link href="http://monaen.github.io/Acadeblog/2016/05/20/SomethingAboutMatlab/"/>
-    <id>http://monaen.github.io/Acadeblog/2016/05/20/SomethingAboutMatlab/</id>
-    <published>2016-05-19T16:00:00.000Z</published>
-    <updated>2016-06-04T10:20:15.000Z</updated>
-    
-    <content type="html">&lt;p&gt;This blog records some useful tricks about matlab, and such tricks can help write matlab codes more efficiently and easy to understand…&lt;/p&gt;
-&lt;h2 id=&quot;matlab-writing-styles&quot;&gt;&lt;a href=&quot;#matlab-writing-styles&quot; class=&quot;headerlink&quot; title=&quot;matlab writing styles&quot;&gt;&lt;/a&gt;matlab writing styles&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;for&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;for i = 1:size(E, 1),&amp;#10;    v = E(i, 1); % variable&amp;#10;    x = E(i, 2); % value&amp;#10;&amp;#10;    ......&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Matlab-functions&quot;&gt;&lt;a href=&quot;#Matlab-functions&quot; class=&quot;headerlink&quot; title=&quot;Matlab functions&quot;&gt;&lt;/a&gt;Matlab functions&lt;/h2&gt;&lt;h3 id=&quot;accumarray-summary-the-values-by-index&quot;&gt;&lt;a href=&quot;#accumarray-summary-the-values-by-index&quot; class=&quot;headerlink&quot; title=&quot;* accumarray: summary the values by index&quot;&gt;&lt;/a&gt;* accumarray: summary the values by index&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;A = [10 20 30 40];&amp;#10;idx = [1 1 1 2];&amp;#10;result = accumarray(idx&amp;#39;,A)&amp;#10;&amp;#10;  result =&amp;#10;&amp;#10;      60&amp;#10;      40&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;This blog records some useful tricks about matlab, and such tricks can help write matlab codes more efficiently and easy to understand…&lt;/
-    
-    </summary>
-    
-      <category term="Matlab" scheme="http://monaen.github.io/Acadeblog/categories/Matlab/"/>
-    
-    
-      <category term="Command" scheme="http://monaen.github.io/Acadeblog/tags/Command/"/>
-    
-      <category term="Matlab" scheme="http://monaen.github.io/Acadeblog/tags/Matlab/"/>
     
   </entry>
   

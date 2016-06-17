@@ -4,9 +4,18 @@
   
     
     <entry>
-      <title><![CDATA[Free Wind -- Blog for Academic Usage]]></title>
-      <url>http://monaen.github.io/Acadeblog/2016/06/06/Birthday/</url>
+      <title><![CDATA[Free Wind]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/06/17/Birthday/</url>
       <content type="html"><![CDATA[<p>This blog is constructed using the <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak" target="_blank" rel="external">Tranquilpeak</a> template and thanks for this awesome freamwork and its provider <a href="https://github.com/LouisBarranqueiro" target="_blank" rel="external">LouisBarranqueiro</a>.</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Interesting Books]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/06/10/InterestingBooks/</url>
+      <content type="html"><![CDATA[<p>I won’t stop believing that if one want to do something big, this first thing is to go with virtue and attitude. Many successful people have the habits that records their thoughts, their ideas or views, and some of them might be helpful to people to think like a “great” man!</p>
+<a id="more"></a>
+<p><a href="https://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554" target="_blank" rel="external">Hackers and Painters: Big Ideas from the Computer Age</a> – A book records those great ideas and thoughts of Paul Graham. <a href="www.paulgraham.com/bio.html">Bio</a> <a href="www.paulgraham.com/articles.html">Essays</a></p>
 ]]></content>
     </entry>
     
@@ -28,13 +37,6 @@
       <title><![CDATA[How to make great deep model]]></title>
       <url>http://monaen.github.io/Acadeblog/2016/06/04/How-to-make-great-deep-model/</url>
       <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Deep learning training tips]]></title>
-      <url>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</url>
-      <content type="html"><![CDATA[<p>Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.<br><a id="more"></a></p>
-]]></content>
     </entry>
     
     <entry>
@@ -72,16 +74,9 @@
     </entry>
     
     <entry>
-      <title><![CDATA[PRML Reading notes]]></title>
-      <url>http://monaen.github.io/Acadeblog/2016/05/20/PRML_readingnotes/</url>
-      <content type="html"><![CDATA[<p>The second chapter</p>
-<ul>
-<li>Determine suituable variables:</li>
-</ul>
-<ul>
-<li>In a frequentist treatment: specific values for the parameters by optimizing some criterion, such as the likelihood function.</li>
-<li>In a Bayesian treatment:    introduce the prior distributions over the parameters and then use Bayes’s theorem to compute the corresponding posterior distribution given the observed data.</li>
-</ul>
+      <title><![CDATA[Deep learning training tips]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</url>
+      <content type="html"><![CDATA[<p>Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.<br><a id="more"></a></p>
 ]]></content>
     </entry>
     
@@ -94,6 +89,20 @@
 </li>
 </ul>
 <h2 id="Matlab-functions"><a href="#Matlab-functions" class="headerlink" title="Matlab functions"></a>Matlab functions</h2><h3 id="accumarray-summary-the-values-by-index"><a href="#accumarray-summary-the-values-by-index" class="headerlink" title="* accumarray: summary the values by index"></a>* accumarray: summary the values by index</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A = [10 20 30 40];&#10;idx = [1 1 1 2];&#10;result = accumarray(idx&#39;,A)&#10;&#10;  result =&#10;&#10;      60&#10;      40</span><br></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[PRML Reading notes]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/05/20/PRML_readingnotes/</url>
+      <content type="html"><![CDATA[<p>The second chapter</p>
+<ul>
+<li>Determine suituable variables:</li>
+</ul>
+<ul>
+<li>In a frequentist treatment: specific values for the parameters by optimizing some criterion, such as the likelihood function.</li>
+<li>In a Bayesian treatment:    introduce the prior distributions over the parameters and then use Bayes’s theorem to compute the corresponding posterior distribution given the observed data.</li>
+</ul>
 ]]></content>
     </entry>
     
