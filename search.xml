@@ -50,13 +50,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Deep learning training tips]]></title>
-      <url>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</url>
-      <content type="html"><![CDATA[<p>Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.<br><a id="more"></a></p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[Mxnet note]]></title>
       <url>http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/</url>
       <content type="html"><![CDATA[<!-- toc -->
@@ -87,6 +80,13 @@
 <li><a href="http://blog.csdn.net/a350203223/article/details/50263737" target="_blank" rel="external">http://blog.csdn.net/a350203223/article/details/50263737</a> – about how to generate rec data</li>
 <li><a href="http://blog.csdn.net/panda1942/article/details/50923006" target="_blank" rel="external">http://blog.csdn.net/panda1942/article/details/50923006</a> – about how to define network symbol</li>
 </ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Deep learning training tips]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</url>
+      <content type="html"><![CDATA[<p>Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.<br><a id="more"></a></p>
 ]]></content>
     </entry>
     

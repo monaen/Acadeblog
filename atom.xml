@@ -142,33 +142,6 @@
   </entry>
   
   <entry>
-    <title>Deep learning training tips</title>
-    <link href="http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/"/>
-    <id>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</id>
-    <published>2016-06-01T16:00:00.000Z</published>
-    <updated>2016-06-05T13:44:54.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
-    
-    
-      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
-    
-      <category term="Training Tips" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tips/"/>
-    
-      <category term="Training Tricks" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tricks/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mxnet note</title>
     <link href="http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/"/>
     <id>http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/</id>
@@ -220,6 +193,33 @@
       <category term="Mxnet" scheme="http://monaen.github.io/Acadeblog/tags/Mxnet/"/>
     
       <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Deep learning training tips</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</id>
+    <published>2016-06-01T16:00:00.000Z</published>
+    <updated>2016-06-05T13:44:54.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
+    
+    
+      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
+    
+      <category term="Training Tips" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tips/"/>
+    
+      <category term="Training Tricks" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tricks/"/>
     
   </entry>
   
