@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Free Wind">
-    <title>Tag: Notes - Free Wind</title>
+    <title>Tag: notes - Free Wind</title>
     <meta name="author" content="Nan meng">
     
         <meta name="keywords" content="deep learning,computer vision,">
@@ -20,7 +20,7 @@
     <meta name="description">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Free Wind">
-<meta property="og:url" content="http://monaen.github.io/Acadeblog/tags/Notes/index.html">
+<meta property="og:url" content="http://monaen.github.io/Acadeblog/tags/notes/index.html">
 <meta property="og:site_name" content="Free Wind">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -226,21 +226,21 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/Acadeblog/2016/06/02/mxnetnote/">
-                            Mxnet note
+                        <a class="link-unstyled" href="/Acadeblog/2016/06/14/ReadingNotes-1/">
+                            Reading Notes(Paper) - 1
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" content="Thu Jun 02 2016 00:00:00 GMT+0800">
+    <time itemprop="datePublished" content="Tue Jun 14 2016 00:00:00 GMT+0800">
 	
-		    Jun 02, 2016
+		    Jun 14, 2016
     	
     </time>
     
         <span>in </span>
         
-    <a class="category-link" href="/Acadeblog/categories/note/">note</a>
+    <a class="category-link" href="/Acadeblog/categories/Notes/">Notes</a>
 
 
     
@@ -249,10 +249,9 @@
             
             
                 <div class="postShorten-excerpt" itemprop="articleBody">
-                    <!-- toc -->
-<p>Here we briefly introduce how to train your own network based on your own dataset using <a href="https://github.com/dmlc/mxnet">Mxnet</a> – a lightweight deep learning framework designed for both efficiency and flexibility.<br>
+                    <p>The reading notes for 2015 ICCV hottest paper.<br>
                     
-                        <a href="/Acadeblog/2016/06/02/mxnetnote/" class="postShorten-excerpt_link link">
+                        <a href="/Acadeblog/2016/06/14/ReadingNotes-1/" class="postShorten-excerpt_link link">
                             Continue reading
                         </a>
                         
@@ -262,237 +261,9 @@
         </div>
         
             <div class="postShorten-thumbnailimg">
-                <img alt="" itemprop="image" src="https://c.hime.io/images/xE82DQ1Q.png"/>
+                <img alt="" itemprop="image" src="http://www.doncooper.com/wp-content/uploads/2012/02/taking-notes.jpg"/>
             </div>
             
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/Acadeblog/2016/05/20/PRML_readingnotes/">
-                            PRML Reading notes
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" content="Fri May 20 2016 00:00:00 GMT+0800">
-	
-		    May 20, 2016
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/Acadeblog/categories/PRML/">PRML</a>
-
-
-    
-</div>
-            </div>
-            
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <p>The second chapter</p>
-<ul>
-<li>Determine suituable variables:</li>
-</ul>
-<ul>
-<li>In a frequentist treatment: specific values for the parameters by optimizing some criterion, such as the likelihood function.</li>
-<li>In a Bayesian treatment:    introduce the prior distributions over the parameters and then use Bayes’s theorem to compute the corresponding posterior distribution given the observed data.</li>
-</ul>
-
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/Acadeblog/2016/05/20/PRML_readingnotes/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/Acadeblog/2016/05/03/Caffe-Learning-Notes1/">
-                            Caffe Learning Notes(1)
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" content="Tue May 03 2016 00:00:00 GMT+0800">
-	
-		    May 03, 2016
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/Acadeblog/categories/Notes/">Notes</a>
-
-
-    
-</div>
-            </div>
-            
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <h3 id="Define-the-‘’CaffeNet’’-by-iPython"><a href="#Define-the-‘’CaffeNet’’-by-iPython" class="headerlink" title="Define the ‘’CaffeNet’’ by iPython"></a>Define the ‘’CaffeNet’’ by iPython</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def conv_relu(bottom, ks, nout, stride = 1, pad = 0, group = 1,&#10;              param = learned_param,&#10;              weight_filler=dict(type=&#39;gaussian&#39;, std=0.01),&#10;              bias_filler=dict(type=&#39;constant&#39;, value=0.1)):&#10;    &#39;&#39;&#39; ks: is the kernel size&#10;        nout: is the number of output&#10;        &#10;        This convolution layer is defined to be preprossed with gaussian filler&#10;    &#39;&#39;&#39;</span><br></pre></td></tr></table></figure>
-<p><code>weight_filler</code> is the </p>
-
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/Acadeblog/2016/05/03/Caffe-Learning-Notes1/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/Acadeblog/2016/04/21/cs231n-note/">
-                            CS231n
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" content="Thu Apr 21 2016 00:00:00 GMT+0800">
-	
-		    Apr 21, 2016
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/Acadeblog/categories/Notes/">Notes</a>
-
-
-    
-</div>
-            </div>
-            
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <h1 id="Notes-for-Class-CS231n"><a href="#Notes-for-Class-CS231n" class="headerlink" title="Notes for Class CS231n"></a>Notes for Class CS231n</h1><p>This page is the learning notes of Class <a href="http://cs231n.github.io/">CS231n</a><br>
-                    
-                        <a href="/Acadeblog/2016/04/21/cs231n-note/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/Acadeblog/2016/04/21/caffe/">
-                            Caffe Training Note
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" content="Thu Apr 21 2016 00:00:00 GMT+0800">
-	
-		    Apr 21, 2016
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/Acadeblog/categories/Notes/">Notes</a>
-
-
-    
-</div>
-            </div>
-            
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <h2 id="ImageNet"><a href="#ImageNet" class="headerlink" title="ImageNet"></a>ImageNet</h2><p>This part is a simplified instruction of training own data using <a href="http://caffe.berkeleyvision.org/">Caffe</a><br>
-                    
-                        <a href="/Acadeblog/2016/04/21/caffe/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/Acadeblog/2016/04/21/Caffe-Training-Experiment/">
-                            Caffe Training Note
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" content="Thu Apr 21 2016 00:00:00 GMT+0800">
-	
-		    Apr 21, 2016
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/Acadeblog/categories/Notes/">Notes</a>
-
-
-    
-</div>
-            </div>
-            
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>Caffe is an open-source deep learning framework originally created by Yangqing Jia which allows you to leverage your GPU for training neural networks. As opposed to other deep learning frameworks like Theano or Torch you don’t have to program the algorithms yourself; instead you specify your network by means of configuration files. Obviously this approach is less time consuming than programming everything on your own, but it also forces you to stay within the boundaries of the framework, of course. Practically though this won’t matter most of the time as the framework Caffe provides is quite powerful and continuously advanced.</p>
-                    
-                        <a href="/Acadeblog/2016/04/21/Caffe-Training-Experiment/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
         
     </article>
     

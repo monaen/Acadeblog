@@ -39,27 +39,43 @@
   </entry>
   
   <entry>
+    <title>Reading Notes(Paper) - 1</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/06/14/ReadingNotes-1/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/06/14/ReadingNotes-1/</id>
+    <published>2016-06-13T16:00:00.000Z</published>
+    <updated>2016-06-19T20:15:41.000Z</updated>
+    
+    <content type="html">&lt;p&gt;The reading notes for 2015 ICCV hottest paper.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1-Visual-Tracking-with-Fully-Convolutional-Networks&quot;&gt;&lt;a href=&quot;#1-Visual-Tracking-with-Fully-Convolutional-Networks&quot; class=&quot;headerlink&quot; title=&quot;1. Visual Tracking with Fully Convolutional Networks&quot;&gt;&lt;/a&gt;1. Visual Tracking with Fully Convolutional Networks&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/Acadeblog/images/ReadingNotes/Visual_Tracking_with_Fully_Convolutional_Networks.png&quot; alt=&quot;pipeline&quot;&gt;&lt;/p&gt;
+&lt;p&gt;This paper proposed a method using CNN for tracking. Different levels have different properties and in their work, they found that a &lt;strong&gt;higher layers&lt;/strong&gt; capture &lt;strong&gt;semantic concepts&lt;/strong&gt; on object categories, whereas &lt;strong&gt;lower layers&lt;/strong&gt; encode more information features to capture &lt;strong&gt;intra class variations&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The whole tracking method jointly considers two convolutional layers of different levels, so the drifts caused by feature maps highly responsing in both target region and background region are significantly mitigated. Another contribution is that a new features selection method is proposed and it can automatically selects discriminative feature maps and discards noisy or unrelated ones. &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The reading notes for 2015 ICCV hottest paper.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
+    
+    
+      <category term="notes" scheme="http://monaen.github.io/Acadeblog/tags/notes/"/>
+    
+      <category term="papers" scheme="http://monaen.github.io/Acadeblog/tags/papers/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Interesting Books</title>
     <link href="http://monaen.github.io/Acadeblog/2016/06/10/InterestingBooks/"/>
     <id>http://monaen.github.io/Acadeblog/2016/06/10/InterestingBooks/</id>
     <published>2016-06-09T16:00:00.000Z</published>
-    <updated>2016-06-17T12:57:53.000Z</updated>
+    <updated>2016-06-17T13:01:16.000Z</updated>
     
     <content type="html">&lt;p&gt;I won’t stop believing that if one wants to do something big, the first thing is to go with virtue and attitude. Many successful people have the habit to record their thoughts, their ideas or views, and some of them might be helpful to people to think like a “great” man!&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;img src=&quot;http://d.gr-assets.com/books/1348562702l/41793.jpg&quot; width=&quot;150&quot;&gt;&lt;/th&gt;
-&lt;th&gt;&lt;a href=&quot;https://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hackers and Painters: Big Ideas from the Computer Age&lt;/a&gt; – A book records those great ideas and thoughts of Paul Graham. [&lt;a href=&quot;http://www.paulgraham.com/bio.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Bio&lt;/a&gt;], [&lt;a href=&quot;http://www.paulgraham.com/articles.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Essays&lt;/a&gt;]&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;| &lt;img src=&quot;http://d.gr-assets.com/books/1348562702l/41793.jpg&quot; width=&quot;150&quot;&gt;  |   &lt;a href=&quot;https://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hackers and Painters: Big Ideas from the Computer Age&lt;/a&gt; – A book records those great ideas and thoughts of Paul Graham.&lt;br&gt;[&lt;a href=&quot;http://www.paulgraham.com/bio.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Bio&lt;/a&gt;], [&lt;a href=&quot;http://www.paulgraham.com/articles.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Essays&lt;/a&gt;] |&lt;br&gt;|—|—|&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -126,6 +142,33 @@
   </entry>
   
   <entry>
+    <title>Deep learning training tips</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</id>
+    <published>2016-06-01T16:00:00.000Z</published>
+    <updated>2016-06-05T13:44:54.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
+    
+    
+      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
+    
+      <category term="Training Tips" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tips/"/>
+    
+      <category term="Training Tricks" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tricks/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mxnet note</title>
     <link href="http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/"/>
     <id>http://monaen.github.io/Acadeblog/2016/06/02/mxnetnote/</id>
@@ -177,33 +220,6 @@
       <category term="Mxnet" scheme="http://monaen.github.io/Acadeblog/tags/Mxnet/"/>
     
       <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Deep learning training tips</title>
-    <link href="http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/"/>
-    <id>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</id>
-    <published>2016-06-01T16:00:00.000Z</published>
-    <updated>2016-06-05T13:44:54.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
-    
-    
-      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
-    
-      <category term="Training Tips" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tips/"/>
-    
-      <category term="Training Tricks" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tricks/"/>
     
   </entry>
   
@@ -351,45 +367,6 @@
   
   <entry>
     <title>Caffe Training Note</title>
-    <link href="http://monaen.github.io/Acadeblog/2016/04/21/caffe/"/>
-    <id>http://monaen.github.io/Acadeblog/2016/04/21/caffe/</id>
-    <published>2016-04-20T16:00:00.000Z</published>
-    <updated>2016-06-04T10:21:26.000Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;ImageNet&quot;&gt;&lt;a href=&quot;#ImageNet&quot; class=&quot;headerlink&quot; title=&quot;ImageNet&quot;&gt;&lt;/a&gt;ImageNet&lt;/h2&gt;&lt;p&gt;This part is a simplified instruction of training own data using &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&quot;1-Preparing-the-dataset&quot;&gt;&lt;a href=&quot;#1-Preparing-the-dataset&quot; class=&quot;headerlink&quot; title=&quot;1. Preparing the dataset&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. Preparing the dataset&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;The final dataset should be like this:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;data&amp;#10;   -- train&amp;#10;      -- train1.jpg&amp;#10;&amp;#9;  -- train2.jpg&amp;#10;&amp;#9;  -- train3.jpg&amp;#10;&amp;#9;     ......&amp;#10;   -- val&amp;#10;&amp;#9;  -- val1.jpg&amp;#10;&amp;#9;  -- val2.jpg&amp;#10;&amp;#9;  -- val3.jpg&amp;#10;&amp;#9;     ......&amp;#10;   -- train.txt&amp;#10;   -- val.txt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;and if the data is like this in python&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;X_train.shape =  (5000, 1, 256, 256)&lt;br&gt;X_val.shape =  (2000, 1, 256, 256)&lt;br&gt;X_test.shape =  (500, 1, 256, 256)&lt;br&gt;y_train =  (5000,)&lt;br&gt;y_val =  (2000,)&lt;br&gt;y_test =  (500,)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The following code can be used to generate the structure of dataset&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; not os.path.exists(&lt;span class=&quot;string&quot;&gt;&#39;data&#39;&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    os.makedirs(&lt;span class=&quot;string&quot;&gt;&#39;data&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;os.chdir(&lt;span class=&quot;string&quot;&gt;&#39;data&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## save image&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; not os.path.exists(&lt;span class=&quot;string&quot;&gt;&#39;train&#39;&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    os.makedirs(&lt;span class=&quot;string&quot;&gt;&#39;train&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; xrange(Numtrain):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    name = &lt;span class=&quot;string&quot;&gt;&#39;train&#39;&lt;/span&gt; + str(i) + &lt;span class=&quot;string&quot;&gt;&#39;.jpg&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xx = X_train[i,]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xx =  xx.transpose(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xx = (xx - np.min(xx)) / (np.max(xx)-np.min(xx))*&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    img = Image.fromarray(xx.astype(np.uint8), &lt;span class=&quot;string&quot;&gt;&#39;RGB&#39;&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;## Notice that the function Image.fromarray() can only save image&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                                  &lt;span class=&quot;comment&quot;&gt;## of the form &#39;uint8&#39; type !!!&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    img.save(&lt;span class=&quot;string&quot;&gt;&#39;train/&#39;&lt;/span&gt; + name)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;............&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Create a new file named “cell” under the “examples/imagenet” path and put the data folder into it&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;copy the file “examples/iamgenet/creat_imagenet.sh into newly created folder “cell” and change it as follows&lt;/strong&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;EXAMPLE=examples/imagenet/cell&amp;#10;DATA=examples/imagenet/cell&amp;#10;TOOLS=build/tools&amp;#10;&amp;#10;TRAIN_DATA_ROOT=examples/imagenet/cell/data/train&amp;#10;VAL_DATA_ROOT=examples/imagenet/cell/data/val&amp;#10;&amp;#10;RESIZE=true # if the images do not need resize, set it to &amp;#34;false&amp;#34;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;run command: &lt;code&gt;./examples/imagenet/myself/create_imagenet.sh&lt;/code&gt;&lt;br&gt;then lmdb file will be generated under cell folder.&lt;/p&gt;
-&lt;h4 id=&quot;2&quot;&gt;&lt;a href=&quot;#2&quot; class=&quot;headerlink&quot; title=&quot;2. &quot;&gt;&lt;/a&gt;&lt;strong&gt;2. &lt;/strong&gt;&lt;/h4&gt;&lt;h3 id=&quot;ERROR-amp-REASION&quot;&gt;&lt;a href=&quot;#ERROR-amp-REASION&quot; class=&quot;headerlink&quot; title=&quot;ERROR &amp;amp; REASION&quot;&gt;&lt;/a&gt;ERROR &amp;amp; REASION&lt;/h3&gt;&lt;h4 id=&quot;Error-1-Out-of-memory&quot;&gt;&lt;a href=&quot;#Error-1-Out-of-memory&quot; class=&quot;headerlink&quot; title=&quot;Error 1: Out of memory&quot;&gt;&lt;/a&gt;Error 1: Out of memory&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;F0420 13:29:52.527748 10836 syncedmem.cpp:56] Check failed: error == cudaSuccess (2 vs. 0)  out of memory&amp;#10;*** Check failure stack trace: ***&amp;#10;    @     0x7f6cb7656dbd  google::LogMessage::Fail()&amp;#10;    @     0x7f6cb7658cf8  google::LogMessage::SendToLog()&amp;#10;    @     0x7f6cb7656953  google::LogMessage::Flush()&amp;#10;    @     0x7f6cb765962e  google::LogMessageFatal::~LogMessageFatal()&amp;#10;    @     0x7f6cb7d5b021  caffe::SyncedMemory::to_gpu()&amp;#10;    @     0x7f6cb7d5a389  caffe::SyncedMemory::mutable_gpu_data()&amp;#10;    @     0x7f6cb7d3fdf2  caffe::Blob&amp;#60;&amp;#62;::mutable_gpu_data()&amp;#10;    @     0x7f6cb7dca57f  caffe::CuDNNConvolutionLayer&amp;#60;&amp;#62;::Forward_gpu()&amp;#10;    @     0x7f6cb7d71ec5  caffe::Net&amp;#60;&amp;#62;::ForwardFromTo()&amp;#10;    @     0x7f6cb7d72237  caffe::Net&amp;#60;&amp;#62;::Forward()&amp;#10;    @     0x7f6cb7d552c7  caffe::Solver&amp;#60;&amp;#62;::Step()&amp;#10;    @     0x7f6cb7d55b89  caffe::Solver&amp;#60;&amp;#62;::Solve()&amp;#10;    @           0x40806e  train()&amp;#10;    @           0x40594c  main&amp;#10;    @     0x7f6cb6969ec5  __libc_start_main&amp;#10;    @           0x406081  (unknown)&amp;#10;Aborted (core dumped)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;Reason&quot;&gt;&lt;a href=&quot;#Reason&quot; class=&quot;headerlink&quot; title=&quot;- Reason&quot;&gt;&lt;/a&gt;- Reason&lt;/h4&gt;&lt;p&gt;ERROR reasion: batch_size is too large!!! you should change the batch_size in train_val.prototxt file&lt;/p&gt;
-&lt;p&gt;Notice: When you set the configuration of caffe model, something you should notice&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#34;batch_size&amp;#34;: should not be larger than 100 if you use a single GPU to train the network.&amp;#10;&amp;#10;&amp;#34;stepsize&amp;#34;: should smaller than &amp;#34;max_iter&amp;#34; and also should be the divisor of &amp;#34;max_iter&amp;#34;.&amp;#10;&amp;#10;&amp;#34;test_iter&amp;#34;: should be the multiple of (val_size / batch_size) [val_size is the size of val data, and the batch_size describe the batch size of val data].&amp;#10;&amp;#10;&amp;#34;test_interval&amp;#34; should better be the multiple of (train_size / batch_size) [train_size is the size of your train data, and the batch_size describe the batch size of train data].&amp;#10;&amp;#10;Since the result is better when you train on your whole train dataset. and this variable determine the model should be test after every how many iterations.&amp;#10;&amp;#10;&amp;#34;stepsize&amp;#34;: determine the &amp;#34;base_lr&amp;#34; should be reduced by &amp;#34;weight_decay&amp;#34; value after how many times iterations.&amp;#10;&amp;#10;&amp;#34;snapshot&amp;#34;: determine the intermidiate results should be stored every how many times of iterations.&amp;#10;&amp;#10;&amp;#34;snapshot_prefix&amp;#34;: determine the directory of storing the snapshot results&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;One example of prototxt configuration:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#####################&amp;#10;## solver.prototxt ##&amp;#10;#####################&amp;#10;&amp;#10;net: &amp;#34;examples/imagenet/cell/train_val.prototxt&amp;#34;&amp;#10;test_iter: 40&amp;#10;test_interval: 40&amp;#10;base_lr: 0.01&amp;#10;lr_policy: &amp;#34;step&amp;#34;&amp;#10;gamma: 0.1&amp;#10;stepsize: 100000&amp;#10;display: 20&amp;#10;max_iter: 10000&amp;#10;momentum: 0.9&amp;#10;weight_decay: 0.0005&amp;#10;snapshot: 1000&amp;#10;snapshot_prefix: &amp;#34;examples/imagenet/cell/model/caffenet_train&amp;#34;&amp;#10;solver_mode: GPU&amp;#10;&amp;#10;&amp;#10;########################&amp;#10;## train_val.prototxt ##&amp;#10;########################&amp;#10;&amp;#10;name: &amp;#34;CaffeNet&amp;#34;&amp;#10;layer &amp;#123;&amp;#10;  name: &amp;#34;data&amp;#34;&amp;#10;  type: &amp;#34;Data&amp;#34;&amp;#10;  top: &amp;#34;data&amp;#34;&amp;#10;  top: &amp;#34;label&amp;#34;&amp;#10;  include &amp;#123;&amp;#10;    phase: TRAIN&amp;#10;  &amp;#125;&amp;#10;  transform_param &amp;#123;&amp;#10;    mirror: true&amp;#10;    crop_size: 227&amp;#10;    mean_file: &amp;#34;examples/imagenet/cell/imagenet_mean.binaryproto&amp;#34;&amp;#10;  &amp;#125;&amp;#10;# mean pixel / channel-wise mean instead of mean image&amp;#10;#  transform_param &amp;#123;&amp;#10;#    crop_size: 227&amp;#10;#    mean_value: 104&amp;#10;#    mean_value: 117&amp;#10;#    mean_value: 123&amp;#10;#    mirror: true&amp;#10;#  &amp;#125;&amp;#10;  data_param &amp;#123;&amp;#10;    source: &amp;#34;examples/imagenet/cell/train_lmdb&amp;#34;&amp;#10;    batch_size: 250&amp;#10;    backend: LMDB&amp;#10;  &amp;#125;&amp;#10;&amp;#125;&amp;#10;layer &amp;#123;&amp;#10;  name: &amp;#34;data&amp;#34;&amp;#10;  type: &amp;#34;Data&amp;#34;&amp;#10;  top: &amp;#34;data&amp;#34;&amp;#10;  top: &amp;#34;label&amp;#34;&amp;#10;  include &amp;#123;&amp;#10;    phase: TEST&amp;#10;  &amp;#125;&amp;#10;  transform_param &amp;#123;&amp;#10;    mirror: false&amp;#10;    crop_size: 227&amp;#10;    mean_file: &amp;#34;examples/imagenet/cell/imagenet_mean.binaryproto&amp;#34;&amp;#10;  &amp;#125;&amp;#10;# mean pixel / channel-wise mean instead of mean image&amp;#10;#  transform_param &amp;#123;&amp;#10;#    crop_size: 227&amp;#10;#    mean_value: 104&amp;#10;#    mean_value: 117&amp;#10;#    mean_value: 123&amp;#10;#    mirror: false&amp;#10;#  &amp;#125;&amp;#10;  data_param &amp;#123;&amp;#10;    source: &amp;#34;examples/imagenet/cell/val_lmdb&amp;#34;&amp;#10;    batch_size: 50&amp;#10;    backend: LMDB&amp;#10;  &amp;#125;&amp;#10;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;ImageNet&quot;&gt;&lt;a href=&quot;#ImageNet&quot; class=&quot;headerlink&quot; title=&quot;ImageNet&quot;&gt;&lt;/a&gt;ImageNet&lt;/h2&gt;&lt;p&gt;This part is a simplified instruction of training own data using &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot;&gt;Caffe&lt;/a&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
-    
-    
-      <category term="Caffe" scheme="http://monaen.github.io/Acadeblog/tags/Caffe/"/>
-    
-      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
-    
-      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Caffe Training Note</title>
     <link href="http://monaen.github.io/Acadeblog/2016/04/21/Caffe-Training-Experiment/"/>
     <id>http://monaen.github.io/Acadeblog/2016/04/21/Caffe-Training-Experiment/</id>
     <published>2016-04-20T16:00:00.000Z</published>
@@ -423,6 +400,45 @@
     
       <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
     
+    
+      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
+    
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Caffe Training Note</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/04/21/caffe/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/04/21/caffe/</id>
+    <published>2016-04-20T16:00:00.000Z</published>
+    <updated>2016-06-04T10:21:26.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;ImageNet&quot;&gt;&lt;a href=&quot;#ImageNet&quot; class=&quot;headerlink&quot; title=&quot;ImageNet&quot;&gt;&lt;/a&gt;ImageNet&lt;/h2&gt;&lt;p&gt;This part is a simplified instruction of training own data using &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1-Preparing-the-dataset&quot;&gt;&lt;a href=&quot;#1-Preparing-the-dataset&quot; class=&quot;headerlink&quot; title=&quot;1. Preparing the dataset&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. Preparing the dataset&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;The final dataset should be like this:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;data&amp;#10;   -- train&amp;#10;      -- train1.jpg&amp;#10;&amp;#9;  -- train2.jpg&amp;#10;&amp;#9;  -- train3.jpg&amp;#10;&amp;#9;     ......&amp;#10;   -- val&amp;#10;&amp;#9;  -- val1.jpg&amp;#10;&amp;#9;  -- val2.jpg&amp;#10;&amp;#9;  -- val3.jpg&amp;#10;&amp;#9;     ......&amp;#10;   -- train.txt&amp;#10;   -- val.txt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;and if the data is like this in python&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;X_train.shape =  (5000, 1, 256, 256)&lt;br&gt;X_val.shape =  (2000, 1, 256, 256)&lt;br&gt;X_test.shape =  (500, 1, 256, 256)&lt;br&gt;y_train =  (5000,)&lt;br&gt;y_val =  (2000,)&lt;br&gt;y_test =  (500,)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The following code can be used to generate the structure of dataset&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; not os.path.exists(&lt;span class=&quot;string&quot;&gt;&#39;data&#39;&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    os.makedirs(&lt;span class=&quot;string&quot;&gt;&#39;data&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;os.chdir(&lt;span class=&quot;string&quot;&gt;&#39;data&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## save image&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; not os.path.exists(&lt;span class=&quot;string&quot;&gt;&#39;train&#39;&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    os.makedirs(&lt;span class=&quot;string&quot;&gt;&#39;train&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; xrange(Numtrain):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    name = &lt;span class=&quot;string&quot;&gt;&#39;train&#39;&lt;/span&gt; + str(i) + &lt;span class=&quot;string&quot;&gt;&#39;.jpg&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xx = X_train[i,]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xx =  xx.transpose(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xx = (xx - np.min(xx)) / (np.max(xx)-np.min(xx))*&lt;span class=&quot;number&quot;&gt;255.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    img = Image.fromarray(xx.astype(np.uint8), &lt;span class=&quot;string&quot;&gt;&#39;RGB&#39;&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;## Notice that the function Image.fromarray() can only save image&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                                  &lt;span class=&quot;comment&quot;&gt;## of the form &#39;uint8&#39; type !!!&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    img.save(&lt;span class=&quot;string&quot;&gt;&#39;train/&#39;&lt;/span&gt; + name)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;............&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Create a new file named “cell” under the “examples/imagenet” path and put the data folder into it&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;copy the file “examples/iamgenet/creat_imagenet.sh into newly created folder “cell” and change it as follows&lt;/strong&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;EXAMPLE=examples/imagenet/cell&amp;#10;DATA=examples/imagenet/cell&amp;#10;TOOLS=build/tools&amp;#10;&amp;#10;TRAIN_DATA_ROOT=examples/imagenet/cell/data/train&amp;#10;VAL_DATA_ROOT=examples/imagenet/cell/data/val&amp;#10;&amp;#10;RESIZE=true # if the images do not need resize, set it to &amp;#34;false&amp;#34;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;run command: &lt;code&gt;./examples/imagenet/myself/create_imagenet.sh&lt;/code&gt;&lt;br&gt;then lmdb file will be generated under cell folder.&lt;/p&gt;
+&lt;h4 id=&quot;2&quot;&gt;&lt;a href=&quot;#2&quot; class=&quot;headerlink&quot; title=&quot;2. &quot;&gt;&lt;/a&gt;&lt;strong&gt;2. &lt;/strong&gt;&lt;/h4&gt;&lt;h3 id=&quot;ERROR-amp-REASION&quot;&gt;&lt;a href=&quot;#ERROR-amp-REASION&quot; class=&quot;headerlink&quot; title=&quot;ERROR &amp;amp; REASION&quot;&gt;&lt;/a&gt;ERROR &amp;amp; REASION&lt;/h3&gt;&lt;h4 id=&quot;Error-1-Out-of-memory&quot;&gt;&lt;a href=&quot;#Error-1-Out-of-memory&quot; class=&quot;headerlink&quot; title=&quot;Error 1: Out of memory&quot;&gt;&lt;/a&gt;Error 1: Out of memory&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;F0420 13:29:52.527748 10836 syncedmem.cpp:56] Check failed: error == cudaSuccess (2 vs. 0)  out of memory&amp;#10;*** Check failure stack trace: ***&amp;#10;    @     0x7f6cb7656dbd  google::LogMessage::Fail()&amp;#10;    @     0x7f6cb7658cf8  google::LogMessage::SendToLog()&amp;#10;    @     0x7f6cb7656953  google::LogMessage::Flush()&amp;#10;    @     0x7f6cb765962e  google::LogMessageFatal::~LogMessageFatal()&amp;#10;    @     0x7f6cb7d5b021  caffe::SyncedMemory::to_gpu()&amp;#10;    @     0x7f6cb7d5a389  caffe::SyncedMemory::mutable_gpu_data()&amp;#10;    @     0x7f6cb7d3fdf2  caffe::Blob&amp;#60;&amp;#62;::mutable_gpu_data()&amp;#10;    @     0x7f6cb7dca57f  caffe::CuDNNConvolutionLayer&amp;#60;&amp;#62;::Forward_gpu()&amp;#10;    @     0x7f6cb7d71ec5  caffe::Net&amp;#60;&amp;#62;::ForwardFromTo()&amp;#10;    @     0x7f6cb7d72237  caffe::Net&amp;#60;&amp;#62;::Forward()&amp;#10;    @     0x7f6cb7d552c7  caffe::Solver&amp;#60;&amp;#62;::Step()&amp;#10;    @     0x7f6cb7d55b89  caffe::Solver&amp;#60;&amp;#62;::Solve()&amp;#10;    @           0x40806e  train()&amp;#10;    @           0x40594c  main&amp;#10;    @     0x7f6cb6969ec5  __libc_start_main&amp;#10;    @           0x406081  (unknown)&amp;#10;Aborted (core dumped)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;Reason&quot;&gt;&lt;a href=&quot;#Reason&quot; class=&quot;headerlink&quot; title=&quot;- Reason&quot;&gt;&lt;/a&gt;- Reason&lt;/h4&gt;&lt;p&gt;ERROR reasion: batch_size is too large!!! you should change the batch_size in train_val.prototxt file&lt;/p&gt;
+&lt;p&gt;Notice: When you set the configuration of caffe model, something you should notice&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#34;batch_size&amp;#34;: should not be larger than 100 if you use a single GPU to train the network.&amp;#10;&amp;#10;&amp;#34;stepsize&amp;#34;: should smaller than &amp;#34;max_iter&amp;#34; and also should be the divisor of &amp;#34;max_iter&amp;#34;.&amp;#10;&amp;#10;&amp;#34;test_iter&amp;#34;: should be the multiple of (val_size / batch_size) [val_size is the size of val data, and the batch_size describe the batch size of val data].&amp;#10;&amp;#10;&amp;#34;test_interval&amp;#34; should better be the multiple of (train_size / batch_size) [train_size is the size of your train data, and the batch_size describe the batch size of train data].&amp;#10;&amp;#10;Since the result is better when you train on your whole train dataset. and this variable determine the model should be test after every how many iterations.&amp;#10;&amp;#10;&amp;#34;stepsize&amp;#34;: determine the &amp;#34;base_lr&amp;#34; should be reduced by &amp;#34;weight_decay&amp;#34; value after how many times iterations.&amp;#10;&amp;#10;&amp;#34;snapshot&amp;#34;: determine the intermidiate results should be stored every how many times of iterations.&amp;#10;&amp;#10;&amp;#34;snapshot_prefix&amp;#34;: determine the directory of storing the snapshot results&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;One example of prototxt configuration:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#####################&amp;#10;## solver.prototxt ##&amp;#10;#####################&amp;#10;&amp;#10;net: &amp;#34;examples/imagenet/cell/train_val.prototxt&amp;#34;&amp;#10;test_iter: 40&amp;#10;test_interval: 40&amp;#10;base_lr: 0.01&amp;#10;lr_policy: &amp;#34;step&amp;#34;&amp;#10;gamma: 0.1&amp;#10;stepsize: 100000&amp;#10;display: 20&amp;#10;max_iter: 10000&amp;#10;momentum: 0.9&amp;#10;weight_decay: 0.0005&amp;#10;snapshot: 1000&amp;#10;snapshot_prefix: &amp;#34;examples/imagenet/cell/model/caffenet_train&amp;#34;&amp;#10;solver_mode: GPU&amp;#10;&amp;#10;&amp;#10;########################&amp;#10;## train_val.prototxt ##&amp;#10;########################&amp;#10;&amp;#10;name: &amp;#34;CaffeNet&amp;#34;&amp;#10;layer &amp;#123;&amp;#10;  name: &amp;#34;data&amp;#34;&amp;#10;  type: &amp;#34;Data&amp;#34;&amp;#10;  top: &amp;#34;data&amp;#34;&amp;#10;  top: &amp;#34;label&amp;#34;&amp;#10;  include &amp;#123;&amp;#10;    phase: TRAIN&amp;#10;  &amp;#125;&amp;#10;  transform_param &amp;#123;&amp;#10;    mirror: true&amp;#10;    crop_size: 227&amp;#10;    mean_file: &amp;#34;examples/imagenet/cell/imagenet_mean.binaryproto&amp;#34;&amp;#10;  &amp;#125;&amp;#10;# mean pixel / channel-wise mean instead of mean image&amp;#10;#  transform_param &amp;#123;&amp;#10;#    crop_size: 227&amp;#10;#    mean_value: 104&amp;#10;#    mean_value: 117&amp;#10;#    mean_value: 123&amp;#10;#    mirror: true&amp;#10;#  &amp;#125;&amp;#10;  data_param &amp;#123;&amp;#10;    source: &amp;#34;examples/imagenet/cell/train_lmdb&amp;#34;&amp;#10;    batch_size: 250&amp;#10;    backend: LMDB&amp;#10;  &amp;#125;&amp;#10;&amp;#125;&amp;#10;layer &amp;#123;&amp;#10;  name: &amp;#34;data&amp;#34;&amp;#10;  type: &amp;#34;Data&amp;#34;&amp;#10;  top: &amp;#34;data&amp;#34;&amp;#10;  top: &amp;#34;label&amp;#34;&amp;#10;  include &amp;#123;&amp;#10;    phase: TEST&amp;#10;  &amp;#125;&amp;#10;  transform_param &amp;#123;&amp;#10;    mirror: false&amp;#10;    crop_size: 227&amp;#10;    mean_file: &amp;#34;examples/imagenet/cell/imagenet_mean.binaryproto&amp;#34;&amp;#10;  &amp;#125;&amp;#10;# mean pixel / channel-wise mean instead of mean image&amp;#10;#  transform_param &amp;#123;&amp;#10;#    crop_size: 227&amp;#10;#    mean_value: 104&amp;#10;#    mean_value: 117&amp;#10;#    mean_value: 123&amp;#10;#    mirror: false&amp;#10;#  &amp;#125;&amp;#10;  data_param &amp;#123;&amp;#10;    source: &amp;#34;examples/imagenet/cell/val_lmdb&amp;#34;&amp;#10;    batch_size: 50&amp;#10;    backend: LMDB&amp;#10;  &amp;#125;&amp;#10;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ImageNet&quot;&gt;&lt;a href=&quot;#ImageNet&quot; class=&quot;headerlink&quot; title=&quot;ImageNet&quot;&gt;&lt;/a&gt;ImageNet&lt;/h2&gt;&lt;p&gt;This part is a simplified instruction of training own data using &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot;&gt;Caffe&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
+    
+    
+      <category term="Caffe" scheme="http://monaen.github.io/Acadeblog/tags/Caffe/"/>
     
       <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
     
