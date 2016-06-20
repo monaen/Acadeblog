@@ -14,7 +14,7 @@
       <title><![CDATA[Reading Notes(Paper) - 1]]></title>
       <url>http://monaen.github.io/Acadeblog/2016/06/14/ReadingNotes-1/</url>
       <content type="html"><![CDATA[<p>The reading notes for 2015 ICCV hottest paper.<br><a id="more"></a></p>
-<h4 id="1-Visual-Tracking-with-Fully-Convolutional-Networks"><a href="#1-Visual-Tracking-with-Fully-Convolutional-Networks" class="headerlink" title="1. Visual Tracking with Fully Convolutional Networks"></a>1. Visual Tracking with Fully Convolutional Networks</h4><p><img src="/Acadeblog/images/ReadingNotes/Visual_Tracking_with_Fully_Convolutional_Networks.png" alt="pipeline"></p>
+<h4 id="1-Visual-Tracking-with-Fully-Convolutional-Networks"><a href="#1-Visual-Tracking-with-Fully-Convolutional-Networks" class="headerlink" title="1. Visual Tracking with Fully Convolutional Networks"></a>1. Visual Tracking with Fully Convolutional Networks</h4><p><img src="/Acadeblog/images/ReadingNotes/Visual_Tracking.png" alt="pipeline"></p>
 <p>This paper proposed a method using CNN for tracking. Different levels have different properties and in their work, they found that a <strong>higher layers</strong> capture <strong>semantic concepts</strong> on object categories, whereas <strong>lower layers</strong> encode more information features to capture <strong>intra class variations</strong>.</p>
 <p>The whole tracking method jointly considers two convolutional layers of different levels, so the drifts caused by feature maps highly responsing in both target region and background region are significantly mitigated. Another contribution is that a new features selection method is proposed and it can automatically selects discriminative feature maps and discards noisy or unrelated ones. </p>
 ]]></content>

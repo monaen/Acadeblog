@@ -43,10 +43,10 @@
     <link href="http://monaen.github.io/Acadeblog/2016/06/14/ReadingNotes-1/"/>
     <id>http://monaen.github.io/Acadeblog/2016/06/14/ReadingNotes-1/</id>
     <published>2016-06-13T16:00:00.000Z</published>
-    <updated>2016-06-19T20:15:41.000Z</updated>
+    <updated>2016-06-20T02:52:21.000Z</updated>
     
     <content type="html">&lt;p&gt;The reading notes for 2015 ICCV hottest paper.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&quot;1-Visual-Tracking-with-Fully-Convolutional-Networks&quot;&gt;&lt;a href=&quot;#1-Visual-Tracking-with-Fully-Convolutional-Networks&quot; class=&quot;headerlink&quot; title=&quot;1. Visual Tracking with Fully Convolutional Networks&quot;&gt;&lt;/a&gt;1. Visual Tracking with Fully Convolutional Networks&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/Acadeblog/images/ReadingNotes/Visual_Tracking_with_Fully_Convolutional_Networks.png&quot; alt=&quot;pipeline&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1-Visual-Tracking-with-Fully-Convolutional-Networks&quot;&gt;&lt;a href=&quot;#1-Visual-Tracking-with-Fully-Convolutional-Networks&quot; class=&quot;headerlink&quot; title=&quot;1. Visual Tracking with Fully Convolutional Networks&quot;&gt;&lt;/a&gt;1. Visual Tracking with Fully Convolutional Networks&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/Acadeblog/images/ReadingNotes/Visual_Tracking.png&quot; alt=&quot;pipeline&quot;&gt;&lt;/p&gt;
 &lt;p&gt;This paper proposed a method using CNN for tracking. Different levels have different properties and in their work, they found that a &lt;strong&gt;higher layers&lt;/strong&gt; capture &lt;strong&gt;semantic concepts&lt;/strong&gt; on object categories, whereas &lt;strong&gt;lower layers&lt;/strong&gt; encode more information features to capture &lt;strong&gt;intra class variations&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The whole tracking method jointly considers two convolutional layers of different levels, so the drifts caused by feature maps highly responsing in both target region and background region are significantly mitigated. Another contribution is that a new features selection method is proposed and it can automatically selects discriminative feature maps and discards noisy or unrelated ones. &lt;/p&gt;
 </content>
