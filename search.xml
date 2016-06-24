@@ -4,6 +4,22 @@
   
     
     <entry>
+      <title><![CDATA[Caffe Notes]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/06/21/Caffe-Learning-Notes1/</url>
+      <content type="html"><![CDATA[<p>Here are some learning notes written when I was learning <a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">caffe</a>, one of the most used deep learning framework, and this page is continuously updated along the time. </p>
+<a id="more"></a>
+<h2 id="Model-configuration"><a href="#Model-configuration" class="headerlink" title="Model configuration"></a>Model configuration</h2><h3 id="The-different-between-dropout-and-dropConnect"><a href="#The-different-between-dropout-and-dropConnect" class="headerlink" title="The different between dropout and dropConnect"></a>The different between dropout and dropConnect</h3><p>Actually, the <a href="http://cs.nyu.edu/~wanli/dropc" target="_blank" rel="external">DropConnect</a> is a generalization of Hinton’s <a href="http://www.cs.toronto.edu/~hinton/absps/dropout.pdf" target="_blank" rel="external">Dropout</a>. DropConnect regularize large fully-connected layers within neural networks. It sets a randomly selected subset of weights within the network to zero. Each unit thus receives input from a random subset of units in the previous layer. </p>
+<p><img src="https://c.hime.io/images/KZRe7dE0.png" alt="image"></p>
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><h3 id="Compile-‘WITH-PYTHON-LAYER-1’-option"><a href="#Compile-‘WITH-PYTHON-LAYER-1’-option" class="headerlink" title="Compile ‘WITH_PYTHON_LAYER = 1’ option"></a>Compile ‘WITH_PYTHON_LAYER = 1’ option</h3><ul>
+<li>QUESTION</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">layer_factory.hpp:<span class="number">77</span>] Check failed: registry.count(<span class="built_in">type</span>) == <span class="number">1</span> (<span class="number">0</span> vs. <span class="number">1</span>) Unknown </span><br><span class="line">layer <span class="built_in">type</span>: Python</span><br></pre></td></tr></table></figure>
+<p>First, you have to rebuild Caffe with <code>WITH_PYTHON_LAYER = 1</code> options uncommented. Run <code>make clean</code> at Caffe root and then uncommented the <code>WITH_PYTHON_LAYER = 1</code> in your Makefile.config file and<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">make all -j16</span><br><span class="line">make <span class="built_in">test</span> -j16</span><br><span class="line">make runtest -j16</span><br><span class="line">make pycaffe</span><br></pre></td></tr></table></figure></p>
+<p>If you use a self-defined layer, let’s say <code>pyloss</code>, you should add a python layer file that is defined in your $PYTHONPATH. So the module name should also be <code>pyloss.py</code>.</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Free Wind]]></title>
       <url>http://monaen.github.io/Acadeblog/2016/06/17/Birthday/</url>
       <content type="html"><![CDATA[<p>This blog is constructed using the <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak" target="_blank" rel="external">Tranquilpeak</a> template and thanks for this awesome freamwork and its provider <a href="https://github.com/LouisBarranqueiro" target="_blank" rel="external">LouisBarranqueiro</a>.</p>
@@ -44,9 +60,10 @@
     </entry>
     
     <entry>
-      <title><![CDATA[How to make great deep model]]></title>
-      <url>http://monaen.github.io/Acadeblog/2016/06/04/How-to-make-great-deep-model/</url>
-      <content type="html"></content>
+      <title><![CDATA[Deep learning training tips]]></title>
+      <url>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</url>
+      <content type="html"><![CDATA[<p>Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.<br><a id="more"></a></p>
+]]></content>
     </entry>
     
     <entry>
@@ -84,13 +101,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Deep learning training tips]]></title>
-      <url>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</url>
-      <content type="html"><![CDATA[<p>Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.<br><a id="more"></a></p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[Something About Matlab]]></title>
       <url>http://monaen.github.io/Acadeblog/2016/05/20/SomethingAboutMatlab/</url>
       <content type="html"><![CDATA[<p>This blog records some useful tricks about matlab, and such tricks can help write matlab codes more efficiently and easy to understand…</p>
@@ -113,14 +123,6 @@
 <li>In a frequentist treatment: specific values for the parameters by optimizing some criterion, such as the likelihood function.</li>
 <li>In a Bayesian treatment:    introduce the prior distributions over the parameters and then use Bayes’s theorem to compute the corresponding posterior distribution given the observed data.</li>
 </ul>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Caffe Learning Notes(1)]]></title>
-      <url>http://monaen.github.io/Acadeblog/2016/05/03/Caffe-Learning-Notes1/</url>
-      <content type="html"><![CDATA[<h3 id="Define-the-‘’CaffeNet’’-by-iPython"><a href="#Define-the-‘’CaffeNet’’-by-iPython" class="headerlink" title="Define the ‘’CaffeNet’’ by iPython"></a>Define the ‘’CaffeNet’’ by iPython</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def conv_relu(bottom, ks, nout, stride = 1, pad = 0, group = 1,&#10;              param = learned_param,&#10;              weight_filler=dict(type=&#39;gaussian&#39;, std=0.01),&#10;              bias_filler=dict(type=&#39;constant&#39;, value=0.1)):&#10;    &#39;&#39;&#39; ks: is the kernel size&#10;        nout: is the number of output&#10;        &#10;        This convolution layer is defined to be preprossed with gaussian filler&#10;    &#39;&#39;&#39;</span><br></pre></td></tr></table></figure>
-<p><code>weight_filler</code> is the </p>
 ]]></content>
     </entry>
     

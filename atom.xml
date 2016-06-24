@@ -5,7 +5,7 @@
   <link href="/Acadeblog/atom.xml" rel="self"/>
   
   <link href="http://monaen.github.io/Acadeblog/"/>
-  <updated>2016-06-17T12:00:44.000Z</updated>
+  <updated>2016-06-24T13:08:19.000Z</updated>
   <id>http://monaen.github.io/Acadeblog/</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Caffe Notes</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/06/21/Caffe-Learning-Notes1/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/06/21/Caffe-Learning-Notes1/</id>
+    <published>2016-06-20T16:00:00.000Z</published>
+    <updated>2016-06-24T13:08:19.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Here are some learning notes written when I was learning &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;caffe&lt;/a&gt;, one of the most used deep learning framework, and this page is continuously updated along the time. &lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Model-configuration&quot;&gt;&lt;a href=&quot;#Model-configuration&quot; class=&quot;headerlink&quot; title=&quot;Model configuration&quot;&gt;&lt;/a&gt;Model configuration&lt;/h2&gt;&lt;h3 id=&quot;The-different-between-dropout-and-dropConnect&quot;&gt;&lt;a href=&quot;#The-different-between-dropout-and-dropConnect&quot; class=&quot;headerlink&quot; title=&quot;The different between dropout and dropConnect&quot;&gt;&lt;/a&gt;The different between dropout and dropConnect&lt;/h3&gt;&lt;p&gt;Actually, the &lt;a href=&quot;http://cs.nyu.edu/~wanli/dropc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DropConnect&lt;/a&gt; is a generalization of Hinton’s &lt;a href=&quot;http://www.cs.toronto.edu/~hinton/absps/dropout.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Dropout&lt;/a&gt;. DropConnect regularize large fully-connected layers within neural networks. It sets a randomly selected subset of weights within the network to zero. Each unit thus receives input from a random subset of units in the previous layer. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://c.hime.io/images/KZRe7dE0.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Configuration&quot;&gt;&lt;a href=&quot;#Configuration&quot; class=&quot;headerlink&quot; title=&quot;Configuration&quot;&gt;&lt;/a&gt;Configuration&lt;/h2&gt;&lt;h3 id=&quot;Compile-‘WITH-PYTHON-LAYER-1’-option&quot;&gt;&lt;a href=&quot;#Compile-‘WITH-PYTHON-LAYER-1’-option&quot; class=&quot;headerlink&quot; title=&quot;Compile ‘WITH_PYTHON_LAYER = 1’ option&quot;&gt;&lt;/a&gt;Compile ‘WITH_PYTHON_LAYER = 1’ option&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;QUESTION&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;layer_factory.hpp:&lt;span class=&quot;number&quot;&gt;77&lt;/span&gt;] Check failed: registry.count(&lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;) == &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; (&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; vs. &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) Unknown &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;layer &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: Python&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;First, you have to rebuild Caffe with &lt;code&gt;WITH_PYTHON_LAYER = 1&lt;/code&gt; options uncommented. Run &lt;code&gt;make clean&lt;/code&gt; at Caffe root and then uncommented the &lt;code&gt;WITH_PYTHON_LAYER = 1&lt;/code&gt; in your Makefile.config file and&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;make all -j16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;make &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt; -j16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;make runtest -j16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;make pycaffe&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;If you use a self-defined layer, let’s say &lt;code&gt;pyloss&lt;/code&gt;, you should add a python layer file that is defined in your $PYTHONPATH. So the module name should also be &lt;code&gt;pyloss.py&lt;/code&gt;.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Here are some learning notes written when I was learning &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot;&gt;caffe&lt;/a&gt;, one of the most used deep learning framework, and this page is continuously updated along the time. &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
+    
+    
+      <category term="Caffe" scheme="http://monaen.github.io/Acadeblog/tags/Caffe/"/>
+    
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
+    
+  </entry>
   
   <entry>
     <title>Free Wind</title>
@@ -43,7 +77,7 @@
     <link href="http://monaen.github.io/Acadeblog/2016/06/14/ReadingNotes-1/"/>
     <id>http://monaen.github.io/Acadeblog/2016/06/14/ReadingNotes-1/</id>
     <published>2016-06-13T16:00:00.000Z</published>
-    <updated>2016-06-20T02:52:21.000Z</updated>
+    <updated>2016-06-20T02:58:19.000Z</updated>
     
     <content type="html">&lt;p&gt;The reading notes for 2015 ICCV hottest paper.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&quot;1-Visual-Tracking-with-Fully-Convolutional-Networks&quot;&gt;&lt;a href=&quot;#1-Visual-Tracking-with-Fully-Convolutional-Networks&quot; class=&quot;headerlink&quot; title=&quot;1. Visual Tracking with Fully Convolutional Networks&quot;&gt;&lt;/a&gt;1. Visual Tracking with Fully Convolutional Networks&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/Acadeblog/images/ReadingNotes/Visual_Tracking.png&quot; alt=&quot;pipeline&quot;&gt;&lt;/p&gt;
@@ -122,22 +156,29 @@
   </entry>
   
   <entry>
-    <title>How to make great deep model</title>
-    <link href="http://monaen.github.io/Acadeblog/2016/06/04/How-to-make-great-deep-model/"/>
-    <id>http://monaen.github.io/Acadeblog/2016/06/04/How-to-make-great-deep-model/</id>
-    <published>2016-06-03T16:00:00.000Z</published>
-    <updated>2016-06-04T11:10:38.000Z</updated>
+    <title>Deep learning training tips</title>
+    <link href="http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/"/>
+    <id>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</id>
+    <published>2016-06-01T16:00:00.000Z</published>
+    <updated>2016-06-05T13:44:54.000Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
     
     <summary type="html">
     
+      &lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;
+    
     </summary>
     
-      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/categories/Deep-Learning/"/>
+      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
     
     
       <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
+    
+      <category term="Training Tips" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tips/"/>
+    
+      <category term="Training Tricks" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tricks/"/>
     
   </entry>
   
@@ -193,33 +234,6 @@
       <category term="Mxnet" scheme="http://monaen.github.io/Acadeblog/tags/Mxnet/"/>
     
       <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Deep learning training tips</title>
-    <link href="http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/"/>
-    <id>http://monaen.github.io/Acadeblog/2016/06/02/TrainingTips/</id>
-    <published>2016-06-01T16:00:00.000Z</published>
-    <updated>2016-06-05T13:44:54.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Techniques for turning high-level parameters of deep networks has been studied for years and this blog summarize some famous previous work to provide some incepts for turning the parameters.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
-    
-    
-      <category term="Deep Learning" scheme="http://monaen.github.io/Acadeblog/tags/Deep-Learning/"/>
-    
-      <category term="Training Tips" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tips/"/>
-    
-      <category term="Training Tricks" scheme="http://monaen.github.io/Acadeblog/tags/Training-Tricks/"/>
     
   </entry>
   
@@ -287,32 +301,6 @@
       <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
     
       <category term="PRML" scheme="http://monaen.github.io/Acadeblog/tags/PRML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Caffe Learning Notes(1)</title>
-    <link href="http://monaen.github.io/Acadeblog/2016/05/03/Caffe-Learning-Notes1/"/>
-    <id>http://monaen.github.io/Acadeblog/2016/05/03/Caffe-Learning-Notes1/</id>
-    <published>2016-05-02T16:00:00.000Z</published>
-    <updated>2016-06-04T10:20:47.000Z</updated>
-    
-    <content type="html">&lt;h3 id=&quot;Define-the-‘’CaffeNet’’-by-iPython&quot;&gt;&lt;a href=&quot;#Define-the-‘’CaffeNet’’-by-iPython&quot; class=&quot;headerlink&quot; title=&quot;Define the ‘’CaffeNet’’ by iPython&quot;&gt;&lt;/a&gt;Define the ‘’CaffeNet’’ by iPython&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def conv_relu(bottom, ks, nout, stride = 1, pad = 0, group = 1,&amp;#10;              param = learned_param,&amp;#10;              weight_filler=dict(type=&amp;#39;gaussian&amp;#39;, std=0.01),&amp;#10;              bias_filler=dict(type=&amp;#39;constant&amp;#39;, value=0.1)):&amp;#10;    &amp;#39;&amp;#39;&amp;#39; ks: is the kernel size&amp;#10;        nout: is the number of output&amp;#10;        &amp;#10;        This convolution layer is defined to be preprossed with gaussian filler&amp;#10;    &amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;code&gt;weight_filler&lt;/code&gt; is the &lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Define-the-‘’CaffeNet’’-by-iPython&quot;&gt;&lt;a href=&quot;#Define-the-‘’CaffeNet’’-by-iPython&quot; class=&quot;headerlink&quot; title=&quot;Define the ‘’CaffeNet’’ 
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/categories/Notes/"/>
-    
-    
-      <category term="Caffe" scheme="http://monaen.github.io/Acadeblog/tags/Caffe/"/>
-    
-      <category term="Notes" scheme="http://monaen.github.io/Acadeblog/tags/Notes/"/>
     
   </entry>
   
@@ -412,7 +400,7 @@
     <link href="http://monaen.github.io/Acadeblog/2016/04/21/caffe/"/>
     <id>http://monaen.github.io/Acadeblog/2016/04/21/caffe/</id>
     <published>2016-04-20T16:00:00.000Z</published>
-    <updated>2016-06-04T10:21:26.000Z</updated>
+    <updated>2016-06-21T07:21:09.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;ImageNet&quot;&gt;&lt;a href=&quot;#ImageNet&quot; class=&quot;headerlink&quot; title=&quot;ImageNet&quot;&gt;&lt;/a&gt;ImageNet&lt;/h2&gt;&lt;p&gt;This part is a simplified instruction of training own data using &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&quot;1-Preparing-the-dataset&quot;&gt;&lt;a href=&quot;#1-Preparing-the-dataset&quot; class=&quot;headerlink&quot; title=&quot;1. Preparing the dataset&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. Preparing the dataset&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;The final dataset should be like this:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;data&amp;#10;   -- train&amp;#10;      -- train1.jpg&amp;#10;&amp;#9;  -- train2.jpg&amp;#10;&amp;#9;  -- train3.jpg&amp;#10;&amp;#9;     ......&amp;#10;   -- val&amp;#10;&amp;#9;  -- val1.jpg&amp;#10;&amp;#9;  -- val2.jpg&amp;#10;&amp;#9;  -- val3.jpg&amp;#10;&amp;#9;     ......&amp;#10;   -- train.txt&amp;#10;   -- val.txt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
